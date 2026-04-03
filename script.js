@@ -2,6 +2,8 @@ const sites = [
   {
     index: "01",
     region: "Tokyo Edit",
+    asideLabel: "Editorial Note",
+    asideText: "城市精品購物、日程安排與預算節奏全都被整理得很完整。",
     title: "Victoria & Aiden 東京爆買之旅",
     subtitle: "Tokyo shopping travel book",
     url: "https://victoriac1122.github.io/victoria-aiden-tokyo-trip/",
@@ -15,6 +17,8 @@ const sites = [
   {
     index: "02",
     region: "Island to Volcano",
+    asideLabel: "Feature Story",
+    asideText: "最像封面故事的一站，從度假海島一路走到火山與文化尾韻。",
     title: "Bali × Java Travel Handbook 2026",
     subtitle: "Indonesia island-to-volcano route",
     url: "https://victoriac1122.github.io/bali-java-travel-2026/",
@@ -28,6 +32,8 @@ const sites = [
   {
     index: "03",
     region: "Road Trip",
+    asideLabel: "Long Form",
+    asideText: "適合長線旅程的整理型網站，資訊量充足又不亂。",
     title: "Victoria 全美西行",
     subtitle: "West Coast USA road trip archive",
     url: "https://victoriac1122.github.io/USA/",
@@ -41,6 +47,8 @@ const sites = [
   {
     index: "04",
     region: "Winter Tokyo",
+    asideLabel: "City Journal",
+    asideText: "比較像東京旅途日記，生活感和花費節奏都很鮮明。",
     title: "東京之旅 12/3–12/8",
     subtitle: "Tokyo winter trip journal",
     url: "https://victoriac1122.github.io/tokyohot/",
@@ -54,6 +62,8 @@ const sites = [
   {
     index: "05",
     region: "Snow Country",
+    asideLabel: "Seasonal Mood",
+    asideText: "雪景、溫泉與安靜冷調，是整個系列裡最有季節感的一站。",
     title: "Victoria 日本東北行",
     subtitle: "Sendai and Aomori travel story",
     url: "https://victoriac1122.github.io/sendai-aomori-travel/",
@@ -76,15 +86,25 @@ cards.innerHTML = sites
           <span class="site-region">${site.region}</span>
           <span class="site-index">${site.index}</span>
         </div>
-        <h3>${site.title}</h3>
-        <p class="site-subtitle">${site.subtitle}</p>
-        <p class="site-description">${site.description}</p>
-        <div class="tag-row">
-          ${site.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
-        </div>
-        <p class="site-note">${site.note}</p>
-        <div class="site-actions">
-          <a class="site-link" href="${site.url}" target="_blank" rel="noreferrer">前往網站</a>
+        <div class="site-card-content">
+          <h3>${site.title}</h3>
+          <p class="site-subtitle">${site.subtitle}</p>
+          <div class="site-deck">
+            <div>
+              <p class="site-description">${site.description}</p>
+              <div class="tag-row">
+                ${site.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
+              </div>
+            </div>
+            <aside class="site-aside">
+              <span class="site-aside-label">${site.asideLabel}</span>
+              <p class="site-aside-text">${site.asideText}</p>
+            </aside>
+          </div>
+          <p class="site-note">${site.note}</p>
+          <div class="site-actions">
+            <a class="site-link" href="${site.url}" target="_blank" rel="noreferrer">Read the site</a>
+          </div>
         </div>
       </article>
     `
