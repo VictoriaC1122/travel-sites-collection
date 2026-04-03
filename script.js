@@ -10,7 +10,7 @@ const sites = [
     note:
       "金棕色調很適合它的購物主題，所以我讓這張卡片更像精品百貨的封面入口。",
     tags: ["東京", "購物", "多語系", "預算規劃"],
-    gradient: "linear-gradient(135deg, #6b5a3a 0%, #8b6f47 35%, #b69a75 100%)"
+    gradient: "radial-gradient(circle at 18% 18%, rgba(255,255,255,0.18), transparent 16%), linear-gradient(160deg, #5b4830 0%, #8b6f47 38%, #baa07b 100%)"
   },
   {
     index: "02",
@@ -23,7 +23,7 @@ const sites = [
     note:
       "我把它做成帶沙色與海霧感的版面，去對齊它原本站裡那種溫暖又有探險感的氛圍。",
     tags: ["印尼", "峇里島", "火山", "旅遊手冊"],
-    gradient: "linear-gradient(135deg, #c46f42 0%, #8d5837 36%, #556f6f 100%)"
+    gradient: "radial-gradient(circle at 80% 20%, rgba(255,255,255,0.15), transparent 16%), linear-gradient(150deg, #c46f42 0%, #8d5837 38%, #4f6c68 100%)"
   },
   {
     index: "03",
@@ -36,7 +36,7 @@ const sites = [
     note:
       "這張卡片改成天空與沙岩色層次，讓它更像公路旅行手冊，而不是一般資訊卡。",
     tags: ["美西", "公路旅行", "費用整理", "長天數"],
-    gradient: "linear-gradient(135deg, #8db4c8 0%, #9b8b7e 46%, #d4c5b9 100%)"
+    gradient: "radial-gradient(circle at 82% 24%, rgba(255,255,255,0.18), transparent 18%), linear-gradient(145deg, #7ea2b4 0%, #9b8b7e 48%, #d8cabd 100%)"
   },
   {
     index: "04",
@@ -49,7 +49,7 @@ const sites = [
     note:
       "這張卡片比較安靜，讓東京冬日的霧藍和暖金去說話，和原本站的細膩感比較接近。",
     tags: ["東京", "冬季", "花費分析", "行程紀錄"],
-    gradient: "linear-gradient(135deg, #7b8d91 0%, #a89e94 50%, #d4a574 100%)"
+    gradient: "radial-gradient(circle at 18% 16%, rgba(255,255,255,0.16), transparent 18%), linear-gradient(150deg, #73868d 0%, #a89e94 50%, #d2a273 100%)"
   },
   {
     index: "05",
@@ -62,7 +62,7 @@ const sites = [
     note:
       "我把這張卡片拉成偏冷藍與霧灰雪色，去呼應它原本那種清冷、漂亮、安靜的質感。",
     tags: ["日本東北", "雪景", "溫泉", "自駕"],
-    gradient: "linear-gradient(135deg, #5f6d7a 0%, #7a8fa0 48%, #dbe4ec 100%)"
+    gradient: "radial-gradient(circle at 80% 18%, rgba(255,255,255,0.16), transparent 18%), linear-gradient(150deg, #5f6d7a 0%, #7a8fa0 48%, #dbe4ec 100%)"
   }
 ];
 
