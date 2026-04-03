@@ -6,13 +6,13 @@
     <title>Victoria Travel Collection</title>
     <meta
       name="description"
-      content="Victoria 的旅遊網站總整理，收錄東京、日本東北、美西、東京冬日行程與峇里島爪哇旅行手冊。"
+      content="Victoria 的旅遊網站總整理，收錄東京、日本東北、美西與印尼旅行手冊，作為統一入口首頁。"
     />
-    <meta name="theme-color" content="#e8d8c3" />
+    <meta name="theme-color" content="#6f7f8b" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -24,102 +24,73 @@
           <div class="brand">
             <span class="brand-mark">V</span>
             <div>
-              <p class="eyebrow">Curated travel archive</p>
-              <p class="brand-title">Victoria Travel Collection</p>
+              <p class="eyebrow">Victoria Travel Archive</p>
+              <p class="brand-title">旅遊網站總整理</p>
             </div>
           </div>
-          <a class="top-link" href="#collection">Explore</a>
+          <div class="top-actions">
+            <a class="top-link" href="#featured">精選旅程</a>
+            <a class="top-link top-link-strong" href="#collection">全部網站</a>
+          </div>
         </nav>
 
-        <div class="hero-grid">
-          <section class="hero-copy">
-            <p class="eyebrow">Travel websites, beautifully organized</p>
-            <h1>把每一次旅行，整理成值得回訪的風景。</h1>
+        <section class="hero-main">
+          <div class="hero-copy">
+            <p class="eyebrow">Curated landing page</p>
+            <h1>把每一次旅行，排成一整面值得打開的風景。</h1>
             <p class="hero-lead">
-              這是一個專屬於 Victoria 的旅遊網站索引頁，把東京購物、東京冬日行程、日本東北、美西公路旅行，以及峇里島到爪哇的旅程，收攏成一個高質感入口。
+              這不是普通的連結頁，而是把你的東京、日本東北、美西與印尼旅行手冊，整理成一個和原本站點同等級的主入口。
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#collection">查看全部網站</a>
-              <a class="button button-secondary" href="#about">設計概念</a>
+              <a class="button button-primary" href="#collection">進入全部旅程</a>
+              <a class="button button-secondary" href="https://github.com/VictoriaC1122/travel-sites-collection" target="_blank" rel="noreferrer">查看 Repo</a>
             </div>
-          </section>
+          </div>
 
-          <aside class="hero-panel">
-            <p class="panel-label">Collection Snapshot</p>
-            <div class="stats">
-              <article>
-                <span class="stat-value">5</span>
-                <span class="stat-label">旅遊主題網站</span>
-              </article>
-              <article>
-                <span class="stat-value">3</span>
-                <span class="stat-label">主要旅行區域</span>
-              </article>
-              <article>
-                <span class="stat-value">∞</span>
-                <span class="stat-label">可回味的旅途細節</span>
-              </article>
-            </div>
-            <p class="panel-note">
-              每一個網站都保留原本的個性與敘事節奏，這裡則負責把它們優雅地串起來。
-            </p>
-          </aside>
-        </div>
+          <div class="hero-stage">
+            <article class="hero-feature hero-feature-main">
+              <span class="feature-kicker">Collection highlight</span>
+              <h2>五個網站，五種旅行語氣。</h2>
+              <p>從東京爆買到雪國東北，從美西長線到峇里島火山線，這裡把每一站的氛圍都收進同一個首頁。</p>
+            </article>
+
+            <article class="hero-feature hero-feature-side">
+              <span class="feature-number">05</span>
+              <p>每張卡片都有獨立配色、簡介、標籤與直接前往按鈕，讓入口頁本身也像旅遊作品集。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mood-strip" id="featured">
+          <article>
+            <span class="mood-title">Tokyo</span>
+            <p>都市購物、冬日行程、漂亮消費節奏</p>
+          </article>
+          <article>
+            <span class="mood-title">Tohoku</span>
+            <p>雪景、溫泉、纜車與冷調風景</p>
+          </article>
+          <article>
+            <span class="mood-title">USA West</span>
+            <p>長距離移動、公路旅行、跨城整理</p>
+          </article>
+          <article>
+            <span class="mood-title">Bali × Java</span>
+            <p>海島柔光、火山晨景、文化收尾</p>
+          </article>
+        </section>
       </header>
 
       <main>
-        <section class="intro-section" id="about">
-          <div class="section-heading">
-            <p class="eyebrow">About this archive</p>
-            <h2>不是單純的連結列表，而是一個旅行作品集首頁。</h2>
-          </div>
-          <div class="intro-grid">
-            <article class="intro-card">
-              <p class="intro-title">高級視覺</p>
-              <p>以精品旅行雜誌感為方向，使用柔和金棕、霧藍與沙色層次，讓首頁本身就有作品集的完成度。</p>
-            </article>
-            <article class="intro-card">
-              <p class="intro-title">清楚分類</p>
-              <p>把不同旅行主題拆成獨立卡片，保留每個網站的重點內容，讓人一眼就知道這趟旅程的風格。</p>
-            </article>
-            <article class="intro-card">
-              <p class="intro-title">直接前往</p>
-              <p>每張卡片都可以一鍵開啟原站，適合作為你所有旅遊網站的主入口，也適合之後持續擴充。</p>
-            </article>
-          </div>
-        </section>
-
         <section class="collection-section" id="collection">
           <div class="section-heading">
-            <p class="eyebrow">The collection</p>
-            <h2>旅遊網站總整理</h2>
+            <p class="eyebrow">Collection index</p>
+            <h2>每一站都值得有自己的封面。</h2>
+            <p class="section-lead">
+              我把這五個站做成更像旅遊雜誌目錄的排列方式，不是平鋪直敘，而是讓每個目的地先用氣氛說話。
+            </p>
           </div>
-
           <div class="collection-grid" id="cards"></div>
-        </section>
-
-        <section class="highlight-section">
-          <div class="section-heading">
-            <p class="eyebrow">Why it works</p>
-            <h2>這個首頁適合作為你所有旅遊站的入口。</h2>
-          </div>
-          <div class="highlight-grid">
-            <article class="highlight-card">
-              <span>01</span>
-              <h3>風格統一，但不抹平個性</h3>
-              <p>首頁用一致的版型和色調整合不同作品，進站後仍然保留各自原本的旅程語氣與內容安排。</p>
-            </article>
-            <article class="highlight-card">
-              <span>02</span>
-              <h3>適合 GitHub Pages</h3>
-              <p>純前端靜態網站，結構簡單、部署輕巧，未來新增第 6 個、第 7 個網站也很容易擴充。</p>
-            </article>
-            <article class="highlight-card">
-              <span>03</span>
-              <h3>像作品集，也像旅行門面</h3>
-              <p>不只是整理連結，更像是一個專門展示你的旅行企劃與手冊作品的 landing page。</p>
-            </article>
-          </div>
         </section>
       </main>
     </div>
