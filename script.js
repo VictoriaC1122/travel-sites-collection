@@ -6,9 +6,6 @@ const copy = {
     heroTitle: "把走過的城市與風景，安放在同一頁裡。",
     heroLead:
       "這是 Victoria 將自己的旅遊手冊整理成網站之後，再進一步彙整而成的總覽網站，讓你可以從同一個入口走進不同地方的旅程。",
-    panelLabel: "Archive",
-    panelCopy:
-      "收錄 Victoria 親自整理的旅遊手冊網站，從城市、雪國到遠行路線，都可以在這裡直接進入。",
     introEyebrow: "Browse by destination",
     introTitle: "依著你此刻想念的地方，走進那一段旅程。",
     collectionEyebrow: "Collection",
@@ -22,9 +19,6 @@ const copy = {
     heroTitle: "A quiet index of cities, roads, and remembered landscapes.",
     heroLead:
       "This is Victoria's collection site, bringing together travel handbook websites into one calm, direct entry point.",
-    panelLabel: "Archive",
-    panelCopy:
-      "A curated home for Victoria's travel handbook websites, from city itineraries to winter routes and long-distance journeys.",
     introEyebrow: "Browse by destination",
     introTitle: "Choose the place you want to enter, then open the journey.",
     collectionEyebrow: "Collection",
@@ -215,11 +209,13 @@ const cards = document.getElementById("cards");
 
 let currentLang = "zh";
 
+const sortedSites = [...sites].sort((a, b) => a.dates.localeCompare(b.dates));
+
 function renderCards(lang) {
-  cards.innerHTML = sites
+  cards.innerHTML = sortedSites
     .map(
-      (site, index) => `
-        <article class="site-card${index === 0 ? " is-featured" : ""}" style="--card-surface:${site.surface}; --card-accent:${site.accent}; --card-region:${site.regionColor};">
+      (site) => `
+        <article class="site-card" style="--card-surface:${site.surface}; --card-accent:${site.accent}; --card-region:${site.regionColor};">
           <div class="site-body">
             <div class="site-top">
               <span class="site-region">${site.region}</span>
