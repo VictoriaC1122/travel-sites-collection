@@ -385,13 +385,15 @@ body {
   align-items: center;
   align-self: flex-start;
   min-height: 28px;
-  padding: 0 10px;
+  padding: 0 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.54);
-  border: 1px solid rgba(78, 62, 46, 0.08);
-  color: rgba(74, 63, 53, 0.88);
-  font-size: 0.78rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(78, 62, 46, 0.1);
+  color: rgba(74, 63, 53, 0.92);
+  font-size: 0.77rem;
   font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 18px rgba(74, 63, 53, 0.06);
 }
 
 .site-actions {
@@ -452,6 +454,12 @@ body {
     font-size: 0.76rem;
   }
 
+  .site-date {
+    width: fit-content;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
   .site-card h3 {
     font-size: 1.58rem;
   }
@@ -490,6 +498,11 @@ body {
   .site-side {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .site-date {
+    align-self: flex-start;
+    white-space: nowrap;
   }
 
   .site-link {

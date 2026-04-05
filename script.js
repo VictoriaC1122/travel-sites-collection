@@ -106,7 +106,7 @@ const sites = [
       zh: "長線旅程",
       en: "Long-haul itinerary"
     },
-    dates: "2025/12/20 - 2026/01/04",
+    dates: "2025/12/20 - 2026/01/07",
     title: {
       zh: "Victoria 全美西行",
       en: "Victoria USA West Coast Trip"
