@@ -90,27 +90,31 @@ const cards = document.getElementById("cards");
 
 cards.innerHTML = sites
   .map(
-    (site) => `
-      <article class="site-card" style="--card-surface:${site.surface}; --card-accent:${site.accent}; --card-region:${site.regionColor};">
-        <div class="site-top">
-          <span class="site-region">${site.region}</span>
-          <span class="site-index">${site.index}</span>
+    (site, index) => `
+      <article class="site-card${index === 0 ? " is-featured" : ""}" style="--card-surface:${site.surface}; --card-accent:${site.accent}; --card-region:${site.regionColor};">
+        <div class="site-body">
+          <div class="site-top">
+            <span class="site-region">${site.region}</span>
+            <span class="site-index">${site.index}</span>
+          </div>
+          <h3>${site.title}</h3>
+          <p class="site-subtitle">${site.subtitle}</p>
+          <div class="site-meta-line">
+            <span>${site.category}</span>
+            <span class="site-meta-dot"></span>
+            <span>${site.duration}</span>
+          </div>
+          <p class="site-description">${site.description}</p>
+          <div class="tag-row">
+            ${site.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
+          </div>
+          <p class="site-note">${site.note}</p>
         </div>
-        <h3>${site.title}</h3>
-        <p class="site-subtitle">${site.subtitle}</p>
-        <div class="site-meta-line">
-          <span>${site.category}</span>
-          <span class="site-meta-dot"></span>
-          <span>${site.duration}</span>
+        <div class="site-side">
           <span class="site-date">${site.dates}</span>
-        </div>
-        <p class="site-description">${site.description}</p>
-        <div class="tag-row">
-          ${site.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
-        </div>
-        <p class="site-note">${site.note}</p>
-        <div class="site-actions">
-          <a class="site-link" href="${site.url}" target="_blank" rel="noreferrer">前往網站</a>
+          <div class="site-actions">
+            <a class="site-link" href="${site.url}" target="_blank" rel="noreferrer">前往網站</a>
+          </div>
         </div>
       </article>
     `
