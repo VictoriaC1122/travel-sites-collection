@@ -366,6 +366,7 @@ body {
 .site-meta-line {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 16px;
   color: var(--card-region, #5a6570);
@@ -379,6 +380,19 @@ body {
   border-radius: 50%;
   background: currentColor;
   opacity: 0.5;
+}
+
+.site-date {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(78, 62, 46, 0.08);
+  color: rgba(74, 63, 53, 0.88);
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 .tag-row {

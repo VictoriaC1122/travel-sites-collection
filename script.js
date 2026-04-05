@@ -4,6 +4,7 @@ const sites = [
     region: "Tokyo Edit",
     category: "Shopping Guide",
     duration: "Tokyo city stay",
+    dates: "2026/02/21 - 2026/02/27",
     title: "Victoria & Aiden 東京爆買之旅",
     subtitle: "Tokyo shopping travel book",
     url: "https://victoriac1122.github.io/victoria-aiden-tokyo-trip/",
@@ -20,6 +21,7 @@ const sites = [
     region: "Bali × Java",
     category: "Nature Route",
     duration: "Island to volcano",
+    dates: "2026/06/13 - 2026/06/21",
     title: "Bali × Java Travel Handbook 2026",
     subtitle: "Indonesia island-to-volcano route",
     url: "https://victoriac1122.github.io/bali-java-travel-2026/",
@@ -36,6 +38,7 @@ const sites = [
     region: "USA West",
     category: "Road Trip",
     duration: "Long-haul itinerary",
+    dates: "2025/12/20 - 2026/01/04",
     title: "Victoria 全美西行",
     subtitle: "West Coast USA road trip archive",
     url: "https://victoriac1122.github.io/USA/",
@@ -52,6 +55,7 @@ const sites = [
     region: "Tokyo Winter",
     category: "City Journal",
     duration: "Winter short trip",
+    dates: "2025/12/03 - 2025/12/08",
     title: "東京之旅 12/3–12/8",
     subtitle: "Tokyo winter trip journal",
     url: "https://victoriac1122.github.io/tokyohot/",
@@ -68,6 +72,7 @@ const sites = [
     region: "Tohoku",
     category: "Snow Country",
     duration: "Winter drive",
+    dates: "2026/01/21 - 2026/01/28",
     title: "Victoria 日本東北行",
     subtitle: "Sendai and Aomori travel story",
     url: "https://victoriac1122.github.io/sendai-aomori-travel/",
@@ -97,6 +102,7 @@ cards.innerHTML = sites
           <span>${site.category}</span>
           <span class="site-meta-dot"></span>
           <span>${site.duration}</span>
+          <span class="site-date">${site.dates}</span>
         </div>
         <p class="site-description">${site.description}</p>
         <div class="tag-row">
