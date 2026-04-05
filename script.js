@@ -29,7 +29,6 @@ const copy = {
 
 const sites = [
   {
-    index: "01",
     region: "Tokyo Edit",
     category: {
       zh: "購物旅冊",
@@ -64,7 +63,6 @@ const sites = [
     regionColor: "#6f593a"
   },
   {
-    index: "02",
     region: "Bali × Java",
     category: {
       zh: "自然路線",
@@ -99,7 +97,6 @@ const sites = [
     regionColor: "#8d5837"
   },
   {
-    index: "03",
     region: "USA West",
     category: {
       zh: "公路旅行",
@@ -134,7 +131,6 @@ const sites = [
     regionColor: "#627b88"
   },
   {
-    index: "04",
     region: "Tokyo Winter",
     category: {
       zh: "城市日誌",
@@ -169,7 +165,6 @@ const sites = [
     regionColor: "#61757b"
   },
   {
-    index: "05",
     region: "Tohoku",
     category: {
       zh: "雪國路線",
@@ -219,7 +214,6 @@ function renderCards(lang) {
           <div class="site-body">
             <div class="site-top">
               <span class="site-region">${site.region}</span>
-              <span class="site-index">${site.index}</span>
             </div>
             <h3>${site.title[lang]}</h3>
             <p class="site-subtitle">${site.subtitle[lang]}</p>
