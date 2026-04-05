@@ -1,17 +1,70 @@
+const copy = {
+  zh: {
+    brandEyebrow: "Victoria Travel Archive",
+    brandTitle: "旅遊網站總整理",
+    heroEyebrow: "Travel guide collection",
+    heroTitle: "把走過的城市與風景，安放在同一頁裡。",
+    heroLead:
+      "這是 Victoria 將自己的旅遊手冊整理成網站之後，再進一步彙整而成的總覽網站，讓你可以從同一個入口走進不同地方的旅程。",
+    panelLabel: "Archive",
+    panelCopy:
+      "收錄 Victoria 親自整理的旅遊手冊網站，從城市、雪國到遠行路線，都可以在這裡直接進入。",
+    introEyebrow: "Browse by destination",
+    introTitle: "依著你此刻想念的地方，走進那一段旅程。",
+    collectionEyebrow: "Collection",
+    collectionTitle: "旅程列表",
+    cta: "前往網站"
+  },
+  en: {
+    brandEyebrow: "Victoria Travel Archive",
+    brandTitle: "Travel Collection",
+    heroEyebrow: "Travel guide collection",
+    heroTitle: "A quiet index of cities, roads, and remembered landscapes.",
+    heroLead:
+      "This is Victoria's collection site, bringing together travel handbook websites into one calm, direct entry point.",
+    panelLabel: "Archive",
+    panelCopy:
+      "A curated home for Victoria's travel handbook websites, from city itineraries to winter routes and long-distance journeys.",
+    introEyebrow: "Browse by destination",
+    introTitle: "Choose the place you want to enter, then open the journey.",
+    collectionEyebrow: "Collection",
+    collectionTitle: "Explore the journeys",
+    cta: "Open site"
+  }
+};
+
 const sites = [
   {
     index: "01",
     region: "Tokyo Edit",
-    category: "Shopping Guide",
-    duration: "Tokyo city stay",
+    category: {
+      zh: "購物旅冊",
+      en: "Shopping Guide"
+    },
+    duration: {
+      zh: "東京城市停留",
+      en: "Tokyo city stay"
+    },
     dates: "2026/02/21 - 2026/02/27",
-    title: "Victoria & Aiden 東京爆買之旅",
-    subtitle: "Tokyo shopping travel book",
+    title: {
+      zh: "Victoria & Aiden 東京爆買之旅",
+      en: "Victoria & Aiden Tokyo Shopping Trip"
+    },
+    subtitle: {
+      zh: "東京購物旅遊手冊",
+      en: "Tokyo shopping travel book"
+    },
     url: "https://victoriac1122.github.io/victoria-aiden-tokyo-trip/",
-    description:
-      "以東京購物和精品逛街為主軸，整理多語切換、每日行程、預算規劃與購物節奏，是一個完整又很有質感的東京旅遊手冊。",
-    note: "適合快速掌握購物熱區與城市動線。",
+    description: {
+      zh: "以東京購物和精品逛街為主軸，整理多語切換、每日行程、預算規劃與購物節奏，是一個完整又很有質感的東京旅遊手冊。",
+      en: "A polished Tokyo handbook focused on shopping districts, daily plans, multilingual browsing, and budget rhythm."
+    },
+    note: {
+      zh: "適合快速掌握購物熱區與城市動線。",
+      en: "Best for shopping districts and city flow."
+    },
     tags: ["東京", "購物", "多語系", "預算規劃"],
+    tagsEn: ["Tokyo", "Shopping", "Multilingual", "Budget"],
     surface: "linear-gradient(135deg, #f4ede4 0%, #e6d7c1 100%)",
     accent: "linear-gradient(90deg, #6b5a3a 0%, #a68b63 100%)",
     regionColor: "#6f593a"
@@ -19,16 +72,34 @@ const sites = [
   {
     index: "02",
     region: "Bali × Java",
-    category: "Nature Route",
-    duration: "Island to volcano",
+    category: {
+      zh: "自然路線",
+      en: "Nature Route"
+    },
+    duration: {
+      zh: "海島到火山",
+      en: "Island to volcano"
+    },
     dates: "2026/06/13 - 2026/06/21",
-    title: "Bali × Java Travel Handbook 2026",
-    subtitle: "Indonesia island-to-volcano route",
+    title: {
+      zh: "Bali × Java Travel Handbook 2026",
+      en: "Bali × Java Travel Handbook 2026"
+    },
+    subtitle: {
+      zh: "印尼海島與火山旅程",
+      en: "Indonesia island-to-volcano route"
+    },
     url: "https://victoriac1122.github.io/bali-java-travel-2026/",
-    description:
-      "從峇里島延伸到東爪哇與日惹的印尼旅行手冊，串起海島、火山、瀑布與文化古城，整體節奏安排非常完整。",
-    note: "適合喜歡自然景觀與完整旅程節奏。",
+    description: {
+      zh: "從峇里島延伸到東爪哇與日惹的印尼旅行手冊，串起海島、火山、瀑布與文化古城，整體節奏安排非常完整。",
+      en: "An Indonesia travel handbook linking Bali, East Java, waterfalls, volcanoes, and Yogyakarta in one smooth route."
+    },
+    note: {
+      zh: "適合喜歡自然景觀與完整旅程節奏。",
+      en: "Best for scenery and full-route planning."
+    },
     tags: ["印尼", "峇里島", "火山", "旅遊手冊"],
+    tagsEn: ["Indonesia", "Bali", "Volcano", "Handbook"],
     surface: "linear-gradient(135deg, #f4eadf 0%, #ead3bf 55%, #d7ddd6 100%)",
     accent: "linear-gradient(90deg, #c46f42 0%, #556f6f 100%)",
     regionColor: "#8d5837"
@@ -36,16 +107,34 @@ const sites = [
   {
     index: "03",
     region: "USA West",
-    category: "Road Trip",
-    duration: "Long-haul itinerary",
+    category: {
+      zh: "公路旅行",
+      en: "Road Trip"
+    },
+    duration: {
+      zh: "長線旅程",
+      en: "Long-haul itinerary"
+    },
     dates: "2025/12/20 - 2026/01/04",
-    title: "Victoria 全美西行",
-    subtitle: "West Coast USA road trip archive",
+    title: {
+      zh: "Victoria 全美西行",
+      en: "Victoria USA West Coast Trip"
+    },
+    subtitle: {
+      zh: "美西公路旅行總整理",
+      en: "West Coast USA road trip archive"
+    },
     url: "https://victoriac1122.github.io/USA/",
-    description:
-      "以美西公路旅行為主軸，整理交通、花費、每日行程和 checklist，資訊量大但結構清楚，適合長天數跨城市旅行。",
-    note: "適合需要長線旅行規劃參考的人。",
+    description: {
+      zh: "以美西公路旅行為主軸，整理交通、花費、每日行程和 checklist，資訊量大但結構清楚，適合長天數跨城市旅行。",
+      en: "A clear long-form West Coast road trip archive with transport, budget, daily plans, and trip checklists."
+    },
+    note: {
+      zh: "適合需要長線旅行規劃參考的人。",
+      en: "Best for long-route planning."
+    },
     tags: ["美西", "公路旅行", "費用整理", "長天數"],
+    tagsEn: ["USA West", "Road Trip", "Budget", "Long Stay"],
     surface: "linear-gradient(135deg, #eef2f1 0%, #dfe7ea 52%, #ebe0d5 100%)",
     accent: "linear-gradient(90deg, #8db4c8 0%, #9b8b7e 100%)",
     regionColor: "#627b88"
@@ -53,16 +142,34 @@ const sites = [
   {
     index: "04",
     region: "Tokyo Winter",
-    category: "City Journal",
-    duration: "Winter short trip",
+    category: {
+      zh: "城市日誌",
+      en: "City Journal"
+    },
+    duration: {
+      zh: "冬日短旅",
+      en: "Winter short trip"
+    },
     dates: "2025/12/03 - 2025/12/08",
-    title: "東京之旅 12/3–12/8",
-    subtitle: "Tokyo winter trip journal",
+    title: {
+      zh: "東京之旅 12/3–12/8",
+      en: "Tokyo Trip 12/3-12/8"
+    },
+    subtitle: {
+      zh: "東京冬日旅程日誌",
+      en: "Tokyo winter trip journal"
+    },
     url: "https://victoriac1122.github.io/tokyohot/",
-    description:
-      "偏向冬日東京的精緻旅程紀錄，整理每日安排、住宿與花費分析，閱讀感更像細膩的旅行日誌。",
-    note: "適合喜歡生活感與回顧感的東京旅程。",
+    description: {
+      zh: "偏向冬日東京的精緻旅程紀錄，整理每日安排、住宿與花費分析，閱讀感更像細膩的旅行日誌。",
+      en: "A winter Tokyo journal with daily plans, stays, and spending notes, shaped more like a personal travel diary."
+    },
+    note: {
+      zh: "適合喜歡生活感與回顧感的東京旅程。",
+      en: "Best for a softer city-diary mood."
+    },
     tags: ["東京", "冬季", "花費分析", "行程紀錄"],
+    tagsEn: ["Tokyo", "Winter", "Spending", "Journal"],
     surface: "linear-gradient(135deg, #edf1f2 0%, #dfe5e5 52%, #ece2d8 100%)",
     accent: "linear-gradient(90deg, #7b8d91 0%, #d4a574 100%)",
     regionColor: "#61757b"
@@ -70,16 +177,34 @@ const sites = [
   {
     index: "05",
     region: "Tohoku",
-    category: "Snow Country",
-    duration: "Winter drive",
+    category: {
+      zh: "雪國路線",
+      en: "Snow Country"
+    },
+    duration: {
+      zh: "冬季自駕",
+      en: "Winter drive"
+    },
     dates: "2026/01/21 - 2026/01/28",
-    title: "Victoria 日本東北行",
-    subtitle: "Sendai and Aomori travel story",
+    title: {
+      zh: "Victoria 日本東北行",
+      en: "Victoria Tohoku Winter Trip"
+    },
+    subtitle: {
+      zh: "仙台與青森雪國旅程",
+      en: "Sendai and Aomori travel story"
+    },
     url: "https://victoriac1122.github.io/sendai-aomori-travel/",
-    description:
-      "以仙台、青森、藏王等東北區域為主角，融合雪景、溫泉、纜車與自駕元素，整體風格安靜、優雅，也很有季節感。",
-    note: "適合尋找冬季東北旅行靈感的人。",
+    description: {
+      zh: "以仙台、青森、藏王等東北區域為主角，融合雪景、溫泉、纜車與自駕元素，整體風格安靜、優雅，也很有季節感。",
+      en: "A quiet winter route through Sendai, Aomori, and Zao, shaped by snow scenes, onsen stays, cable cars, and driving."
+    },
+    note: {
+      zh: "適合尋找冬季東北旅行靈感的人。",
+      en: "Best for winter Tohoku inspiration."
+    },
     tags: ["日本東北", "雪景", "溫泉", "自駕"],
+    tagsEn: ["Tohoku", "Snow", "Onsen", "Drive"],
     surface: "linear-gradient(135deg, #edf2f6 0%, #dde6ee 55%, #f2f5f7 100%)",
     accent: "linear-gradient(90deg, #5f6d7a 0%, #8fa1b3 100%)",
     regionColor: "#5e7182"
@@ -88,35 +213,57 @@ const sites = [
 
 const cards = document.getElementById("cards");
 
-cards.innerHTML = sites
-  .map(
-    (site, index) => `
-      <article class="site-card${index === 0 ? " is-featured" : ""}" style="--card-surface:${site.surface}; --card-accent:${site.accent}; --card-region:${site.regionColor};">
-        <div class="site-body">
-          <div class="site-top">
-            <span class="site-region">${site.region}</span>
-            <span class="site-index">${site.index}</span>
+let currentLang = "zh";
+
+function renderCards(lang) {
+  cards.innerHTML = sites
+    .map(
+      (site, index) => `
+        <article class="site-card${index === 0 ? " is-featured" : ""}" style="--card-surface:${site.surface}; --card-accent:${site.accent}; --card-region:${site.regionColor};">
+          <div class="site-body">
+            <div class="site-top">
+              <span class="site-region">${site.region}</span>
+              <span class="site-index">${site.index}</span>
+            </div>
+            <h3>${site.title[lang]}</h3>
+            <p class="site-subtitle">${site.subtitle[lang]}</p>
+            <div class="site-meta-line">
+              <span>${site.category[lang]}</span>
+              <span class="site-meta-dot"></span>
+              <span>${site.duration[lang]}</span>
+            </div>
+            <p class="site-description">${site.description[lang]}</p>
+            <div class="tag-row">
+              ${(lang === "zh" ? site.tags : site.tagsEn).map((tag) => `<span class="tag">${tag}</span>`).join("")}
+            </div>
+            <p class="site-note">${site.note[lang]}</p>
           </div>
-          <h3>${site.title}</h3>
-          <p class="site-subtitle">${site.subtitle}</p>
-          <div class="site-meta-line">
-            <span>${site.category}</span>
-            <span class="site-meta-dot"></span>
-            <span>${site.duration}</span>
+          <div class="site-side">
+            <span class="site-date">${site.dates}</span>
+            <div class="site-actions">
+              <a class="site-link" href="${site.url}" target="_blank" rel="noreferrer">${copy[lang].cta}</a>
+            </div>
           </div>
-          <p class="site-description">${site.description}</p>
-          <div class="tag-row">
-            ${site.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
-          </div>
-          <p class="site-note">${site.note}</p>
-        </div>
-        <div class="site-side">
-          <span class="site-date">${site.dates}</span>
-          <div class="site-actions">
-            <a class="site-link" href="${site.url}" target="_blank" rel="noreferrer">前往網站</a>
-          </div>
-        </div>
-      </article>
-    `
-  )
-  .join("");
+        </article>
+      `
+    )
+    .join("");
+}
+
+function applyLanguage(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.textContent = copy[lang][el.dataset.i18n];
+  });
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+  renderCards(lang);
+}
+
+document.querySelectorAll(".lang-btn").forEach((btn) => {
+  btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
+});
+
+applyLanguage(currentLang);

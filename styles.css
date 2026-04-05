@@ -63,6 +63,15 @@ body {
   gap: 16px;
 }
 
+.lang-switcher {
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(72, 58, 45, 0.08);
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -103,14 +112,12 @@ body {
   font-size: 0.95rem;
 }
 
-.top-link,
 .button,
 .site-link {
   text-decoration: none;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.top-link,
 .button,
 .site-link {
   display: inline-flex;
@@ -120,13 +127,23 @@ body {
   padding: 0 18px;
   border-radius: 999px;
   font-weight: 700;
+.lang-btn {
+  min-width: 44px;
+  height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-.top-link,
-.button-secondary {
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid var(--line);
+.lang-btn.active {
+  background: linear-gradient(135deg, #826344 0%, #738592 100%);
+  color: #fffaf5;
+  box-shadow: 0 8px 18px rgba(87, 66, 44, 0.14);
 }
 
 .button-primary,
@@ -134,9 +151,6 @@ body {
   color: #fffaf5;
   background: linear-gradient(135deg, #826344 0%, #738592 100%);
   box-shadow: 0 12px 30px rgba(87, 66, 44, 0.14);
-}
-
-.top-link:hover,
 .button:hover,
 .site-link:hover {
   transform: translateY(-1px);
@@ -203,13 +217,6 @@ body {
   color: #4d4944;
   font-size: 0.8rem;
   font-weight: 600;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 24px;
 }
 
 .hero-panel {
@@ -346,6 +353,7 @@ body {
   font-size: 2rem;
   line-height: 1.02;
   max-width: 12ch;
+  text-wrap: balance;
 }
 
 .site-subtitle {
@@ -443,27 +451,6 @@ body {
 }
 
 @media (max-width: 840px) {
-  .hero-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .collection-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .site-card.is-featured {
-    grid-template-columns: 1fr;
-    padding: 24px;
-    min-height: 0;
-  }
-
-  .site-side {
-    padding-top: 14px;
-    border-top: 1px solid var(--line);
-  }
-}
-
-@media (max-width: 640px) {
   .page-shell {
     width: min(100% - 16px, 100%);
     margin: 8px auto 20px;
@@ -476,10 +463,29 @@ body {
     border-radius: 22px;
   }
 
-  .topbar,
-  .site-top {
-    flex-direction: column;
-    align-items: stretch;
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-card.is-featured {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    min-height: 0;
+  }
+
+  .site-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
   }
 
   .hero-copy,
@@ -489,23 +495,74 @@ body {
     border-radius: 18px;
   }
 
-  .hero-actions {
-    flex-direction: column;
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.14;
+    max-width: none;
   }
 
-  .top-link,
-  .button,
+  .hero-lead {
+    font-size: 0.92rem;
+    line-height: 1.8;
+  }
+
+  .hero-panel-copy {
+    font-size: 1.12rem;
+    line-height: 1.55;
+  }
+
+  .hero-highlights {
+    gap: 8px;
+  }
+
+  .hero-highlights span,
+  .site-date,
+  .tag {
+    min-height: 28px;
+    font-size: 0.76rem;
+  }
+
+  .section-heading {
+    margin-bottom: 14px;
+  }
+
+  .site-card h3 {
+    font-size: 1.55rem;
+  }
+
+  .site-description,
+  .site-note {
+    font-size: 0.9rem;
+    line-height: 1.72;
+  }
+
+  .site-link {
+    min-width: 112px;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar,
+  .site-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lang-switcher {
+    align-self: flex-start;
+  }
+
+  .site-side {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .site-link {
     width: 100%;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
   .intro h2,
-  .section-heading h2,
-  .site-card h3 {
-    font-size: 1.75rem;
+  .section-heading h2 {
+    font-size: 1.55rem;
   }
 }
