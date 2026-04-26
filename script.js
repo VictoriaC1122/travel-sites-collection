@@ -63,6 +63,40 @@ const sites = [
     regionColor: "#6f593a"
   },
   {
+    region: "UK · AIB 2026",
+    category: {
+      zh: "研討會旅程",
+      en: "Conference Journey"
+    },
+    duration: {
+      zh: "曼城到倫敦",
+      en: "Manchester to London"
+    },
+    dates: "2026/06/29 - 2026/07/12",
+    title: {
+      zh: "AIB 2026 曼徹斯特英國行",
+      en: "AIB 2026 Manchester UK Trip"
+    },
+    subtitle: {
+      zh: "英國研討會與城市旅程手冊",
+      en: "UK conference and city travel handbook"
+    },
+    url: "https://victoriac1122.github.io/uk-aib-2026-travel/",
+    description: {
+      zh: "以 AIB 2026 曼徹斯特研討會為起點，串起航班、住宿、會議安排、報帳資訊與倫敦段移動，是一份實用又完整的英國旅程手冊。",
+      en: "A practical UK handbook built around AIB 2026 in Manchester, connecting flights, stays, conference plans, reimbursement details, and the London leg."
+    },
+    note: {
+      zh: "適合查看會議旅程與英國移動安排。",
+      en: "Best for conference travel and UK routing."
+    },
+    tags: ["英國", "曼徹斯特", "倫敦", "研討會"],
+    tagsEn: ["UK", "Manchester", "London", "Conference"],
+    surface: "linear-gradient(135deg, #efe8ea 0%, #ddd7e4 52%, #dfe6ea 100%)",
+    accent: "linear-gradient(90deg, #6d5b74 0%, #6b8795 100%)",
+    regionColor: "#66566f"
+  },
+  {
     region: "Bali × Java",
     category: {
       zh: "自然路線",
