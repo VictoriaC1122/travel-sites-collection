@@ -3,11 +3,11 @@ const copy = {
     brandEyebrow: "Victoria Travel Archive",
     brandTitle: "旅遊網站總整理",
     heroEyebrow: "Travel guide collection",
-    heroTitle: "Victoria 的旅遊手冊整理",
+    heroTitle: "把走過的地方，收在同一頁裡。",
     heroLead:
-      "這裡收錄 Victoria 一站一站整理出的旅遊網站，從東京、東北、美西到英國與印尼，都可以直接從這裡進入。",
+      "這裡收著 Victoria 一站一站寫下的旅遊手冊。從城市街燈到雪地山路，從長途公路到海島火山，每一段旅程都在這裡慢慢展開。",
     introEyebrow: "Browse by destination",
-    introTitle: "想看哪一段旅程，就從那座城市開始。",
+    introTitle: "若心裡正想起一座城，便從那裡開始讀起。",
     collectionEyebrow: "Collection",
     collectionTitle: "旅程列表",
     cta: "前往網站"
@@ -16,11 +16,11 @@ const copy = {
     brandEyebrow: "Victoria Travel Archive",
     brandTitle: "Travel Collection",
     heroEyebrow: "Travel guide collection",
-    heroTitle: "Victoria's travel guide collection",
+    heroTitle: "Places gathered onto a single page.",
     heroLead:
-      "A single place for Victoria's travel guide websites, from Tokyo and Tohoku to the American West, the UK, and Indonesia.",
+      "A collection of Victoria's travel handbooks, where city streets, winter roads, long drives, and island routes are kept side by side.",
     introEyebrow: "Browse by destination",
-    introTitle: "Choose a place, then open the trip.",
+    introTitle: "Begin with the place your mind returns to.",
     collectionEyebrow: "Collection",
     collectionTitle: "Explore the journeys",
     cta: "Open site"
@@ -49,12 +49,12 @@ const sites = [
     },
     url: "https://victoriac1122.github.io/victoria-aiden-tokyo-trip/",
     description: {
-      zh: "以東京購物和精品逛街為主軸，整理多語切換、每日行程、預算規劃與購物節奏，是一個完整又很有質感的東京旅遊手冊。",
-      en: "A polished Tokyo handbook focused on shopping districts, daily plans, multilingual browsing, and budget rhythm."
+      zh: "把東京的百貨、街區與購物節奏細細收攏，從每日安排到預算分配，都寫成一冊明亮而俐落的城市旅程。",
+      en: "A Tokyo handbook shaped around shopping streets, daily rhythm, and budget notes, crisp and city-bright."
     },
     note: {
-      zh: "適合快速掌握購物熱區與城市動線。",
-      en: "Best for shopping districts and city flow."
+      zh: "適合沿著街區與櫥窗，一路慢慢逛下去。",
+      en: "Best for tracing shopping streets and city flow."
     },
     tags: ["東京", "購物", "多語系", "預算規劃"],
     tagsEn: ["Tokyo", "Shopping", "Multilingual", "Budget"],
@@ -83,12 +83,12 @@ const sites = [
     },
     url: "https://victoriac1122.github.io/uk-aib-2026-travel/",
     description: {
-      zh: "以 AIB 2026 曼徹斯特研討會為起點，串起航班、住宿、會議安排、報帳資訊與倫敦段移動，是一份實用又完整的英國旅程手冊。",
-      en: "A practical UK handbook built around AIB 2026 in Manchester, connecting flights, stays, conference plans, reimbursement details, and the London leg."
+      zh: "從曼徹斯特的會議日程出發，沿著車站、住宿與倫敦街景一路展開，把學術行程與旅途片段安靜地編在一起。",
+      en: "Beginning in Manchester for AIB 2026, this handbook threads conference days, stations, stays, and the London leg into one quiet route."
     },
     note: {
-      zh: "適合查看會議旅程與英國移動安排。",
-      en: "Best for conference travel and UK routing."
+      zh: "適合在會議與城市之間，留一點從容的步調。",
+      en: "Best for balancing conference plans with city movement."
     },
     tags: ["英國", "曼徹斯特", "倫敦", "研討會"],
     tagsEn: ["UK", "Manchester", "London", "Conference"],
@@ -117,12 +117,12 @@ const sites = [
     },
     url: "https://victoriac1122.github.io/bali-java-travel-2026/",
     description: {
-      zh: "從峇里島延伸到東爪哇與日惹的印尼旅行手冊，串起海島、火山、瀑布與文化古城，整體節奏安排非常完整。",
-      en: "An Indonesia travel handbook linking Bali, East Java, waterfalls, volcanoes, and Yogyakarta in one smooth route."
+      zh: "從海風與稻田開始，走到火山、瀑布與古城，把印尼一路南洋而熱烈的景色，串成一條完整的遠行路線。",
+      en: "From sea air and rice fields to volcanoes, waterfalls, and old cities, this route gathers Indonesia into one vivid journey."
     },
     note: {
-      zh: "適合喜歡自然景觀與完整旅程節奏。",
-      en: "Best for scenery and full-route planning."
+      zh: "適合喜歡風景一路層層推開的人。",
+      en: "Best for scenery-led travel and full-route pacing."
     },
     tags: ["印尼", "峇里島", "火山", "旅遊手冊"],
     tagsEn: ["Indonesia", "Bali", "Volcano", "Handbook"],
@@ -151,12 +151,12 @@ const sites = [
     },
     url: "https://victoriac1122.github.io/USA/",
     description: {
-      zh: "以美西公路旅行為主軸，整理交通、花費、每日行程和 checklist，資訊量大但結構清楚，適合長天數跨城市旅行。",
-      en: "A clear long-form West Coast road trip archive with transport, budget, daily plans, and trip checklists."
+      zh: "沿著美西公路向前，把城市與城市之間的距離、花費與停留都仔細記下，讀起來像一段拉得很長的路。",
+      en: "A long-form West Coast road trip archive that keeps distance, budget, and daily stops in clear view."
     },
     note: {
-      zh: "適合需要長線旅行規劃參考的人。",
-      en: "Best for long-route planning."
+      zh: "適合為一段長路慢慢鋪好節奏。",
+      en: "Best for shaping a longer road journey."
     },
     tags: ["美西", "公路旅行", "費用整理", "長天數"],
     tagsEn: ["USA West", "Road Trip", "Budget", "Long Stay"],
@@ -185,12 +185,12 @@ const sites = [
     },
     url: "https://victoriac1122.github.io/tokyohot/",
     description: {
-      zh: "偏向冬日東京的精緻旅程紀錄，整理每日安排、住宿與花費分析，閱讀感更像細膩的旅行日誌。",
-      en: "A winter Tokyo journal with daily plans, stays, and spending notes, shaped more like a personal travel diary."
+      zh: "是冬天東京的短篇日誌，寫下每日步伐、住處與花費，也把城市冷冷亮亮的光留在字裡。",
+      en: "A winter Tokyo journal of daily walks, stays, and spending, with the city's cold light kept close."
     },
     note: {
-      zh: "適合喜歡生活感與回顧感的東京旅程。",
-      en: "Best for a softer city-diary mood."
+      zh: "適合想讀一段帶著生活氣息的東京回憶。",
+      en: "Best for a softer, diary-like Tokyo mood."
     },
     tags: ["東京", "冬季", "花費分析", "行程紀錄"],
     tagsEn: ["Tokyo", "Winter", "Spending", "Journal"],
@@ -219,12 +219,12 @@ const sites = [
     },
     url: "https://victoriac1122.github.io/sendai-aomori-travel/",
     description: {
-      zh: "以仙台、青森、藏王等東北區域為主角，融合雪景、溫泉、纜車與自駕元素，整體風格安靜、優雅，也很有季節感。",
-      en: "A quiet winter route through Sendai, Aomori, and Zao, shaped by snow scenes, onsen stays, cable cars, and driving."
+      zh: "雪落在仙台、青森與藏王之間，溫泉、纜車與自駕的路線也跟著安靜下來，像一冊留著白色餘韻的冬日旅書。",
+      en: "A winter route through Sendai, Aomori, and Zao, where snow, onsen stays, cable cars, and driving settle into a quieter rhythm."
     },
     note: {
-      zh: "適合尋找冬季東北旅行靈感的人。",
-      en: "Best for winter Tohoku inspiration."
+      zh: "適合把雪國的安靜，一點一點讀進心裡。",
+      en: "Best for winter Tohoku inspiration and a quieter pace."
     },
     tags: ["日本東北", "雪景", "溫泉", "自駕"],
     tagsEn: ["Tohoku", "Snow", "Onsen", "Drive"],
