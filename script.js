@@ -3,11 +3,11 @@ const copy = {
     brandEyebrow: "Victoria Travel Archive",
     brandTitle: "旅遊網站總整理",
     heroEyebrow: "Travel guide collection",
-    heroTitle: "把走過的城市與風景，安放在同一頁裡。",
+    heroTitle: "Victoria 的旅遊手冊整理",
     heroLead:
-      "這是 Victoria 將自己的旅遊手冊整理成網站之後，再進一步彙整而成的總覽網站，讓你可以從同一個入口走進不同地方的旅程。",
+      "這裡收錄 Victoria 一站一站整理出的旅遊網站，從東京、東北、美西到英國與印尼，都可以直接從這裡進入。",
     introEyebrow: "Browse by destination",
-    introTitle: "依著你此刻想念的地方，走進那一段旅程。",
+    introTitle: "想看哪一段旅程，就從那座城市開始。",
     collectionEyebrow: "Collection",
     collectionTitle: "旅程列表",
     cta: "前往網站"
@@ -16,11 +16,11 @@ const copy = {
     brandEyebrow: "Victoria Travel Archive",
     brandTitle: "Travel Collection",
     heroEyebrow: "Travel guide collection",
-    heroTitle: "A quiet index of cities, roads, and remembered landscapes.",
+    heroTitle: "Victoria's travel guide collection",
     heroLead:
-      "This is Victoria's collection site, bringing together travel handbook websites into one calm, direct entry point.",
+      "A single place for Victoria's travel guide websites, from Tokyo and Tohoku to the American West, the UK, and Indonesia.",
     introEyebrow: "Browse by destination",
-    introTitle: "Choose the place you want to enter, then open the journey.",
+    introTitle: "Choose a place, then open the trip.",
     collectionEyebrow: "Collection",
     collectionTitle: "Explore the journeys",
     cta: "Open site"
@@ -58,8 +58,8 @@ const sites = [
     },
     tags: ["東京", "購物", "多語系", "預算規劃"],
     tagsEn: ["Tokyo", "Shopping", "Multilingual", "Budget"],
-    surface: "linear-gradient(135deg, #f4ede4 0%, #e6d7c1 100%)",
-    accent: "linear-gradient(90deg, #6b5a3a 0%, #a68b63 100%)",
+    surface: "#efe4d5",
+    accent: "#8c6b47",
     regionColor: "#6f593a"
   },
   {
@@ -92,8 +92,8 @@ const sites = [
     },
     tags: ["英國", "曼徹斯特", "倫敦", "研討會"],
     tagsEn: ["UK", "Manchester", "London", "Conference"],
-    surface: "linear-gradient(135deg, #efe8ea 0%, #ddd7e4 52%, #dfe6ea 100%)",
-    accent: "linear-gradient(90deg, #6d5b74 0%, #6b8795 100%)",
+    surface: "#e5dee6",
+    accent: "#76647d",
     regionColor: "#66566f"
   },
   {
@@ -126,8 +126,8 @@ const sites = [
     },
     tags: ["印尼", "峇里島", "火山", "旅遊手冊"],
     tagsEn: ["Indonesia", "Bali", "Volcano", "Handbook"],
-    surface: "linear-gradient(135deg, #f4eadf 0%, #ead3bf 55%, #d7ddd6 100%)",
-    accent: "linear-gradient(90deg, #c46f42 0%, #556f6f 100%)",
+    surface: "#ead8c7",
+    accent: "#9a6a48",
     regionColor: "#8d5837"
   },
   {
@@ -160,8 +160,8 @@ const sites = [
     },
     tags: ["美西", "公路旅行", "費用整理", "長天數"],
     tagsEn: ["USA West", "Road Trip", "Budget", "Long Stay"],
-    surface: "linear-gradient(135deg, #eef2f1 0%, #dfe7ea 52%, #ebe0d5 100%)",
-    accent: "linear-gradient(90deg, #8db4c8 0%, #9b8b7e 100%)",
+    surface: "#e3e7e7",
+    accent: "#768e98",
     regionColor: "#627b88"
   },
   {
@@ -194,8 +194,8 @@ const sites = [
     },
     tags: ["東京", "冬季", "花費分析", "行程紀錄"],
     tagsEn: ["Tokyo", "Winter", "Spending", "Journal"],
-    surface: "linear-gradient(135deg, #edf1f2 0%, #dfe5e5 52%, #ece2d8 100%)",
-    accent: "linear-gradient(90deg, #7b8d91 0%, #d4a574 100%)",
+    surface: "#e6e7e2",
+    accent: "#7b8a87",
     regionColor: "#61757b"
   },
   {
@@ -228,8 +228,8 @@ const sites = [
     },
     tags: ["日本東北", "雪景", "溫泉", "自駕"],
     tagsEn: ["Tohoku", "Snow", "Onsen", "Drive"],
-    surface: "linear-gradient(135deg, #edf2f6 0%, #dde6ee 55%, #f2f5f7 100%)",
-    accent: "linear-gradient(90deg, #5f6d7a 0%, #8fa1b3 100%)",
+    surface: "#e4ebf0",
+    accent: "#6c7a89",
     regionColor: "#5e7182"
   }
 ];
