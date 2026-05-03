@@ -97,6 +97,40 @@ const sites = [
     regionColor: "#66566f"
   },
   {
+    region: "Seoul",
+    category: {
+      zh: "城市旅冊",
+      en: "City Guide"
+    },
+    duration: {
+      zh: "首爾短旅",
+      en: "Seoul short stay"
+    },
+    dates: "2026/05/15 - 2026/05/20",
+    title: {
+      zh: "Seoul Travel Handbook 2026",
+      en: "Seoul Travel Handbook 2026"
+    },
+    subtitle: {
+      zh: "首爾城市旅行手冊",
+      en: "Seoul city travel handbook"
+    },
+    url: "https://victoriac1122.github.io/seoul-travel-2026/",
+    description: {
+      zh: "把首爾的地鐵線、旅館、韓服拍攝與街區步調寫成一冊輕輕展開的城市手冊，像一段帶著韓劇光影的短暫逃逸。",
+      en: "A Seoul handbook of subway lines, stays, hanbok moments, and neighborhood rhythm, unfolding like a brief K-drama escape."
+    },
+    note: {
+      zh: "適合想把首爾走得輕盈又有畫面的人。",
+      en: "Best for a lighter Seoul trip with a cinematic mood."
+    },
+    tags: ["首爾", "韓服", "多語系", "城市散步"],
+    tagsEn: ["Seoul", "Hanbok", "Multilingual", "City Walks"],
+    surface: "#e5e0db",
+    accent: "#8c7a72",
+    regionColor: "#74655e"
+  },
+  {
     region: "Bali × Java",
     category: {
       zh: "自然路線",
