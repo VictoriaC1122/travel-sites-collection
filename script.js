@@ -131,6 +131,40 @@ const sites = [
     regionColor: "#74655e"
   },
   {
+    region: "Australia",
+    category: {
+      zh: "城市路線",
+      en: "City Route"
+    },
+    duration: {
+      zh: "墨爾本到雪梨",
+      en: "Melbourne to Sydney"
+    },
+    dates: "2026/05/23 - 2026/05/30",
+    title: {
+      zh: "Australia Travel Handbook 2026",
+      en: "Australia Travel Handbook 2026"
+    },
+    subtitle: {
+      zh: "澳洲雙城旅行手冊",
+      en: "Australia two-city travel handbook"
+    },
+    url: "https://victoriac1122.github.io/australia-travel-2026/",
+    description: {
+      zh: "從墨爾本的巷弄與咖啡開始，轉進大洋路與雪梨港灣，把兩座城市的步調收成一段溫暖而明亮的南半球旅程。",
+      en: "Beginning with Melbourne laneways and coffee, then turning toward the Great Ocean Road and Sydney Harbour, this is a warm two-city Australia journey."
+    },
+    note: {
+      zh: "適合喜歡城市散步、海岸風景與從容節奏的人。",
+      en: "Best for city walks, coastal scenery, and an easy pace."
+    },
+    tags: ["澳洲", "墨爾本", "雪梨", "大洋路"],
+    tagsEn: ["Australia", "Melbourne", "Sydney", "Great Ocean Road"],
+    surface: "#ead9cb",
+    accent: "#a26c45",
+    regionColor: "#87583b"
+  },
+  {
     region: "Bali × Java",
     category: {
       zh: "自然路線",
