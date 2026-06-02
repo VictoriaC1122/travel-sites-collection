@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="hero">
+      <header class="hero" id="top">
         <nav class="topbar">
           <div class="brand">
             <span class="brand-mark">V</span>
@@ -36,36 +36,46 @@
 
         <div class="hero-layout">
           <section class="hero-copy">
-            <p class="eyebrow" data-i18n="heroEyebrow">Travel guide collection</p>
-            <h1 data-i18n="heroTitle">把走過的城市與風景，安放在同一頁裡。</h1>
-            <p class="hero-lead" data-i18n="heroLead">
-              這是 Victoria 將自己的旅遊手冊整理成網站之後，再進一步彙整而成的總覽網站，讓你可以從同一個入口走進不同地方的旅程。
-            </p>
-            <div class="hero-summary" aria-label="Site overview">
-              <div class="hero-stat">
-                <span class="hero-stat-value" id="tripCount">8</span>
-                <span class="hero-stat-label" data-i18n="heroStatTrips">旅程</span>
+            <div class="hero-shell">
+              <div class="hero-main">
+                <p class="eyebrow" data-i18n="heroEyebrow">Travel guide collection</p>
+                <h1 data-i18n="heroTitle">把走過的城市與風景，安放在同一頁裡。</h1>
+                <p class="hero-lead" data-i18n="heroLead">
+                  這是 Victoria 將自己的旅遊手冊整理成網站之後，再進一步彙整而成的總覽網站，讓你可以從同一個入口走進不同地方的旅程。
+                </p>
+                <div class="hero-actions">
+                  <a class="hero-cta" href="#collection" data-i18n="heroCta">瀏覽旅程</a>
+                </div>
               </div>
-              <div class="hero-stat">
-                <span class="hero-stat-value">2025–2026</span>
-                <span class="hero-stat-label" data-i18n="heroStatYears">年份</span>
-              </div>
-              <div class="hero-stat">
-                <span class="hero-stat-value">ZH / EN</span>
-                <span class="hero-stat-label" data-i18n="heroStatLang">語言</span>
-              </div>
-            </div>
-            <div class="hero-highlights">
-              <span>Tokyo</span>
-              <span>Seoul</span>
-              <span>Australia</span>
-              <span>Tohoku</span>
-              <span>USA West</span>
-              <span>UK</span>
-              <span>Bali × Java</span>
-            </div>
-            <div class="hero-actions">
-              <a class="hero-cta" href="#collection" data-i18n="heroCta">瀏覽旅程</a>
+              <aside class="hero-side" aria-label="Collection summary">
+                <div class="hero-side-head">
+                  <p class="eyebrow" data-i18n="heroSideEyebrow">At a glance</p>
+                  <p class="hero-side-title" data-i18n="heroSideTitle">從同一個入口，打開不同旅程。</p>
+                </div>
+                <div class="hero-summary" aria-label="Site overview">
+                  <div class="hero-stat">
+                    <span class="hero-stat-value" id="tripCount">8</span>
+                    <span class="hero-stat-label" data-i18n="heroStatTrips">旅程</span>
+                  </div>
+                  <div class="hero-stat">
+                    <span class="hero-stat-value" id="tripYears">2025–2026</span>
+                    <span class="hero-stat-label" data-i18n="heroStatYears">年份</span>
+                  </div>
+                  <div class="hero-stat">
+                    <span class="hero-stat-value">ZH / EN</span>
+                    <span class="hero-stat-label" data-i18n="heroStatLang">語言</span>
+                  </div>
+                </div>
+                <div class="hero-highlights">
+                  <span>Tokyo</span>
+                  <span>Seoul</span>
+                  <span>Australia</span>
+                  <span>Tohoku</span>
+                  <span>USA West</span>
+                  <span>UK</span>
+                  <span>Bali × Java</span>
+                </div>
+              </aside>
             </div>
           </section>
         </div>
@@ -73,18 +83,31 @@
 
       <main>
         <section class="intro">
-          <p class="eyebrow" data-i18n="introEyebrow">Browse by destination</p>
-          <h2 data-i18n="introTitle">依著你此刻想念的地方，走進那一段旅程。</h2>
+          <div class="intro-grid">
+            <div class="intro-copy">
+              <p class="eyebrow" data-i18n="introEyebrow">Browse by destination</p>
+              <h2 data-i18n="introTitle">依著你此刻想念的地方，走進那一段旅程。</h2>
+            </div>
+            <p class="intro-body" data-i18n="introBody">依日期排序，保留每一站最重要的入口與簡介，讓你在手機或電腦上都能很快找到想看的那一段。</p>
+          </div>
         </section>
 
         <section class="collection-section" id="collection">
           <div class="section-heading">
-            <p class="eyebrow" data-i18n="collectionEyebrow">Collection</p>
-            <h2 data-i18n="collectionTitle">Explore the journeys</h2>
+            <div class="section-heading-copy">
+              <p class="eyebrow" data-i18n="collectionEyebrow">Collection</p>
+              <h2 data-i18n="collectionTitle">Explore the journeys</h2>
+            </div>
+            <p class="section-heading-note" data-i18n="collectionLead">依出發日期排序，從最近寫下的旅程，一路翻到更早的地方。</p>
           </div>
           <div class="collection-grid" id="cards"></div>
         </section>
       </main>
+
+      <footer class="site-footer">
+        <p class="site-footer-copy" data-i18n="footerCopy">Victoria Travel Archive</p>
+        <a class="site-footer-link" href="#top" data-i18n="footerBackToTop">回到上方</a>
+      </footer>
     </div>
 
     <script src="./script.js"></script>

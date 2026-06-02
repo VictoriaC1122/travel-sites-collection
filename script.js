@@ -6,14 +6,20 @@ const copy = {
     heroTitle: "把走過的地方，收在同一頁裡。",
     heroLead:
       "這裡收著 Victoria 一站一站寫下的旅遊手冊。從城市街燈到雪地山路，從長途公路到海島火山，每一段旅程都在這裡慢慢展開。",
+    heroSideEyebrow: "At a glance",
+    heroSideTitle: "從同一個入口，打開不同旅程。",
     heroStatTrips: "旅程",
     heroStatYears: "年份",
     heroStatLang: "語言",
     heroCta: "瀏覽旅程",
     introEyebrow: "Browse by destination",
     introTitle: "若心裡正想起一座城，便從那裡開始讀起。",
+    introBody: "依日期排序，保留每一站最重要的入口與簡介，讓你在手機或電腦上都能很快找到想看的那一段。",
     collectionEyebrow: "Collection",
     collectionTitle: "旅程列表",
+    collectionLead: "依出發日期排序，從最近寫下的旅程，一路翻到更早的地方。",
+    footerCopy: "Victoria Travel Archive",
+    footerBackToTop: "回到上方",
     cta: "前往網站"
   },
   en: {
@@ -23,14 +29,20 @@ const copy = {
     heroTitle: "Places gathered onto a single page.",
     heroLead:
       "A collection of Victoria's travel handbooks, where city streets, winter roads, long drives, and island routes are kept side by side.",
+    heroSideEyebrow: "At a glance",
+    heroSideTitle: "Different journeys, opened from one calm place.",
     heroStatTrips: "Journeys",
     heroStatYears: "Years",
     heroStatLang: "Language",
     heroCta: "Browse journeys",
     introEyebrow: "Browse by destination",
     introTitle: "Begin with the place your mind returns to.",
+    introBody: "Sorted by departure date, each card keeps the clearest entry point and a short introduction for quick browsing across phone and desktop.",
     collectionEyebrow: "Collection",
     collectionTitle: "Explore the journeys",
+    collectionLead: "Sorted by departure date, from the next journey outward to earlier ones.",
+    footerCopy: "Victoria Travel Archive",
+    footerBackToTop: "Back to top",
     cta: "Open site"
   }
 };
@@ -315,6 +327,11 @@ const cards = document.getElementById("cards");
 let currentLang = "zh";
 
 const sortedSites = [...sites].sort((a, b) => a.dates.localeCompare(b.dates));
+const tripYears = (() => {
+  const years = sites.flatMap((site) => site.dates.match(/\d{4}/g) || []);
+  const uniqueYears = [...new Set(years)].sort();
+  return uniqueYears.length > 1 ? `${uniqueYears[0]}-${uniqueYears[uniqueYears.length - 1]}` : uniqueYears[0];
+})();
 
 function renderCards(lang) {
   cards.innerHTML = sortedSites
@@ -358,6 +375,8 @@ function applyLanguage(lang) {
   });
   const tripCount = document.getElementById("tripCount");
   if (tripCount) tripCount.textContent = String(sites.length);
+  const years = document.getElementById("tripYears");
+  if (years) years.textContent = tripYears;
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
