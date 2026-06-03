@@ -23,6 +23,9 @@
   --space-8: 64px;
   --content-width: 1180px;
   --button-height: 46px;
+  --font-display: "Cormorant Garamond", "Noto Serif TC", "Songti TC", serif;
+  --font-body: "Noto Serif TC", "LXGW WenKai TC", "Songti TC", "PingFang TC", "Microsoft JhengHei", serif;
+  --font-ui: "Noto Sans TC", "Manrope", "Inter", "PingFang TC", "Microsoft JhengHei", sans-serif;
 }
 
 * {
@@ -39,10 +42,12 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   color: var(--ink);
-  font-family: "Noto Serif TC", "LXGW WenKai TC", "Songti TC", "PingFang TC", "Microsoft JhengHei", serif;
+  font-family: var(--font-body);
   background:
     radial-gradient(circle at top left, rgba(206, 194, 179, 0.22), transparent 25%),
     linear-gradient(180deg, #f8f3ec 0%, var(--bg) 48%, #efe6db 100%);
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 
 a,
@@ -133,7 +138,7 @@ main {
 .eyebrow {
   margin: 0;
   color: var(--ink-faint);
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.66rem;
   font-weight: 500;
   letter-spacing: 0.16em;
@@ -141,14 +146,18 @@ main {
 }
 
 .brand-title,
-.hero h1,
 .intro h2,
 .section-heading h2,
 .site-card h3,
 .hero-side-title {
   margin: 0;
-  font-family: "Noto Serif TC", "Songti TC", "PingFang TC", serif;
+  font-family: var(--font-body);
   font-weight: 500;
+}
+
+.hero h1,
+.hero-stat-value {
+  font-family: var(--font-display);
 }
 
 .brand-title {
@@ -175,9 +184,10 @@ main {
   border-radius: 999px;
   background: transparent;
   color: var(--ink-soft);
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.82rem;
   font-weight: 500;
+  letter-spacing: 0.03em;
   cursor: pointer;
   transition: background 180ms ease, color 180ms ease;
 }
@@ -240,6 +250,10 @@ main {
   text-wrap: balance;
 }
 
+html[lang="en"] .hero h1 {
+  letter-spacing: 0.02em;
+}
+
 .hero-lead {
   max-width: 34rem;
   margin: 18px 0 0;
@@ -265,10 +279,11 @@ main {
   border-radius: 999px;
   border: 1px solid rgba(88, 70, 53, 0.1);
   text-decoration: none;
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.84rem;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.035em;
+  font-variant-numeric: lining-nums tabular-nums;
   transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -309,18 +324,19 @@ main {
 }
 
 .hero-stat-value {
-  font-family: "Cormorant Garamond", "Noto Serif TC", serif;
   font-size: 1.28rem;
   line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .hero-stat-label {
   color: var(--ink-faint);
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .hero-highlights {
@@ -341,9 +357,11 @@ main {
   border: 1px solid rgba(95, 77, 61, 0.08);
   background: rgba(255, 251, 246, 0.8);
   color: #5b534c;
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.76rem;
   font-weight: 500;
+  letter-spacing: 0.025em;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .intro,
@@ -473,10 +491,10 @@ main {
   color: var(--card-region, #6b625a);
   background: rgba(255, 251, 246, 0.85);
   border: 1px solid rgba(95, 77, 61, 0.08);
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
@@ -486,6 +504,11 @@ main {
   line-height: 1.42;
   letter-spacing: 0.012em;
   text-wrap: balance;
+}
+
+html[lang="en"] .site-card h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.018em;
 }
 
 .site-subtitle {
@@ -502,10 +525,11 @@ main {
   gap: 10px;
   margin-top: 14px;
   color: var(--card-region, #5a6570);
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.76rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.045em;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .site-meta-dot {
@@ -576,6 +600,16 @@ main {
   letter-spacing: 0.01em;
 }
 
+.site-date,
+.hero-stat-value,
+.hero-stat-label,
+.site-meta-line,
+.site-link,
+.hero-cta,
+.lang-btn {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -589,9 +623,10 @@ main {
 .site-footer-link {
   margin: 0;
   color: var(--ink-faint);
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.84rem;
   text-decoration: none;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .site-footer-link:hover {
