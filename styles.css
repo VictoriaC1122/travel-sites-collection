@@ -506,9 +506,11 @@ html[lang="en"] .hero h1 {
   text-wrap: balance;
 }
 
+.site-title-latin,
 html[lang="en"] .site-card h3 {
   font-family: var(--font-display);
   letter-spacing: 0.018em;
+  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 .site-subtitle {
@@ -517,6 +519,13 @@ html[lang="en"] .site-card h3 {
   font-size: 0.92rem;
   line-height: 1.82;
   letter-spacing: 0.01em;
+}
+
+.site-subtitle-latin {
+  font-family: var(--font-ui);
+  font-size: 0.84rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
 }
 
 .site-meta-line {
@@ -530,6 +539,10 @@ html[lang="en"] .site-card h3 {
   font-weight: 500;
   letter-spacing: 0.045em;
   font-variant-numeric: lining-nums tabular-nums;
+}
+
+.site-meta-item-latin {
+  letter-spacing: 0.065em;
 }
 
 .site-meta-dot {
@@ -562,6 +575,10 @@ html[lang="en"] .site-card h3 {
   font-size: 0.73rem;
 }
 
+.tag-latin {
+  letter-spacing: 0.045em;
+}
+
 .site-side {
   display: flex;
   align-items: center;
@@ -574,6 +591,22 @@ html[lang="en"] .site-card h3 {
 .site-date {
   color: #5c544d;
   font-weight: 600;
+  gap: 8px;
+}
+
+.site-date-part,
+.site-date-sep {
+  font-family: var(--font-ui);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.site-date-part {
+  letter-spacing: 0.045em;
+}
+
+.site-date-sep {
+  color: var(--ink-faint);
+  font-size: 0.78em;
 }
 
 .site-actions {
@@ -583,6 +616,10 @@ html[lang="en"] .site-card h3 {
 .site-link {
   color: #5d4a39;
   background: rgba(255, 251, 246, 0.8);
+}
+
+.site-link-latin {
+  letter-spacing: 0.055em;
 }
 
 .site-link:hover {
@@ -608,6 +645,17 @@ html[lang="en"] .site-card h3 {
 .hero-cta,
 .lang-btn {
   font-variant-numeric: lining-nums tabular-nums;
+}
+
+.hero-highlights span,
+.hero-stat-value,
+.hero-stat-label,
+.site-region-latin,
+.site-meta-item-latin,
+.site-date,
+.site-link-latin,
+.tag-latin {
+  font-feature-settings: "tnum" 1, "lnum" 1, "kern" 1;
 }
 
 .site-footer {

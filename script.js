@@ -333,6 +333,19 @@ const tripYears = (() => {
   return uniqueYears.length > 1 ? `${uniqueYears[0]}-${uniqueYears[uniqueYears.length - 1]}` : uniqueYears[0];
 })();
 
+function hasLatin(text) {
+  return /[A-Za-z]/.test(text);
+}
+
+function renderDateMarkup(dates) {
+  const [start, end] = dates.split(" - ");
+  return `
+    <span class="site-date-part">${start}</span>
+    <span class="site-date-sep" aria-hidden="true">—</span>
+    <span class="site-date-part">${end}</span>
+  `;
+}
+
 function renderCards(lang) {
   cards.innerHTML = sortedSites
     .map(
@@ -340,25 +353,27 @@ function renderCards(lang) {
         <article class="site-card" style="--card-surface:${site.surface}; --card-accent:${site.accent}; --card-region:${site.regionColor};">
           <div class="site-body">
             <div class="site-top">
-              <span class="site-region">${site.region}</span>
+              <span class="site-region${hasLatin(site.region) ? " site-region-latin" : ""}">${site.region}</span>
             </div>
-            <h3>${site.title[lang]}</h3>
-            <p class="site-subtitle">${site.subtitle[lang]}</p>
+            <h3 class="site-title${hasLatin(site.title[lang]) ? " site-title-latin" : ""}">${site.title[lang]}</h3>
+            <p class="site-subtitle${hasLatin(site.subtitle[lang]) ? " site-subtitle-latin" : ""}">${site.subtitle[lang]}</p>
             <div class="site-meta-line">
-              <span>${site.category[lang]}</span>
+              <span class="site-meta-item${hasLatin(site.category[lang]) ? " site-meta-item-latin" : ""}">${site.category[lang]}</span>
               <span class="site-meta-dot"></span>
-              <span>${site.duration[lang]}</span>
+              <span class="site-meta-item${hasLatin(site.duration[lang]) ? " site-meta-item-latin" : ""}">${site.duration[lang]}</span>
             </div>
             <p class="site-description">${site.description[lang]}</p>
             <div class="tag-row">
-              ${(lang === "zh" ? site.tags : site.tagsEn).map((tag) => `<span class="tag">${tag}</span>`).join("")}
+              ${(lang === "zh" ? site.tags : site.tagsEn)
+                .map((tag) => `<span class="tag${hasLatin(tag) ? " tag-latin" : ""}">${tag}</span>`)
+                .join("")}
             </div>
             <p class="site-note">${site.note[lang]}</p>
           </div>
           <div class="site-side">
-            <span class="site-date">${site.dates}</span>
+            <span class="site-date" aria-label="${site.dates}">${renderDateMarkup(site.dates)}</span>
             <div class="site-actions">
-              <a class="site-link" href="${site.url}" target="_blank" rel="noreferrer">${copy[lang].cta}</a>
+              <a class="site-link${lang === "en" ? " site-link-latin" : ""}" href="${site.url}" target="_blank" rel="noreferrer">${copy[lang].cta}</a>
             </div>
           </div>
         </article>
