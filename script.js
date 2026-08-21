@@ -6,15 +6,7 @@ const copy = {
     heroTitle: "把即將出發的城市，慢慢收進一本本手冊裡。",
     heroLead:
       "每一趟旅行，都整理成一本可以隨身打開的旅程筆記。從城市散步、住宿交通，到每日路線與貼心提醒，出發前先把旅程慢慢翻一遍。",
-    heroSideEyebrow: "Library Note",
-    heroSideTitle: "像翻一本旅行雜誌的目錄，也像一排安靜放著的手冊。",
-    heroStatTrips: "手冊",
-    heroStatYears: "年份",
-    heroStatLang: "語系",
     heroCta: "閱讀旅程",
-    introEyebrow: "Travel Index",
-    introTitle: "從此刻想念的地方開始，翻開那一段路上的日常。",
-    introBody: "依出發日期排列，每一站都留下簡短摘要、主題標記與旅程入口，像一頁安靜好讀的旅行書架。",
     collectionEyebrow: "Handbook Shelf",
     collectionTitle: "旅行手冊目錄",
     collectionLead: "城市、雪國、海岸、公路與火山，都在這裡各自佔一個安靜的位置。",
@@ -29,15 +21,7 @@ const copy = {
     heroTitle: "Cities and routes, gathered into quiet handbooks.",
     heroLead:
       "Each trip is kept as a handbook you can open before departure, with city notes, stays, routes, and the small details that make the journey easier to carry.",
-    heroSideEyebrow: "Library Note",
-    heroSideTitle: "Part magazine index, part shelf of travel notebooks.",
-    heroStatTrips: "Handbooks",
-    heroStatYears: "Years",
-    heroStatLang: "Language",
     heroCta: "Open the shelf",
-    introEyebrow: "Travel Index",
-    introTitle: "Begin with the place your mind returns to.",
-    introBody: "Sorted by departure date, each entry keeps a short note, a few themes, and a direct way into the journey.",
     collectionEyebrow: "Handbook Shelf",
     collectionTitle: "Travel handbook index",
     collectionLead: "Cities, winter roads, coastlines, conference trips, and longer routes are kept together here.",
@@ -327,11 +311,6 @@ const cards = document.getElementById("cards");
 let currentLang = "zh";
 
 const sortedSites = [...sites].sort((a, b) => a.dates.localeCompare(b.dates));
-const tripYears = (() => {
-  const years = sites.flatMap((site) => site.dates.match(/\d{4}/g) || []);
-  const uniqueYears = [...new Set(years)].sort();
-  return uniqueYears.length > 1 ? `${uniqueYears[0]}-${uniqueYears[uniqueYears.length - 1]}` : uniqueYears[0];
-})();
 
 function hasLatin(text) {
   return /[A-Za-z]/.test(text);
@@ -388,10 +367,6 @@ function applyLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     el.textContent = copy[lang][el.dataset.i18n];
   });
-  const tripCount = document.getElementById("tripCount");
-  if (tripCount) tripCount.textContent = String(sites.length);
-  const years = document.getElementById("tripYears");
-  if (years) years.textContent = tripYears;
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
