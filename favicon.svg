@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Victoria's Travel Library">
+  <rect width="64" height="64" rx="14" fill="#f4eee5"/>
+  <rect x="7" y="7" width="50" height="50" rx="25" fill="none" stroke="#8a715a" stroke-width="1.5"/>
+  <path d="M20 19h8v2.2h-2.4l7.3 20.2L40.7 21H38v-2h7v2h-1.8L33 47h-2.6L21.7 21H20z" fill="#66513f"/>
+</svg>

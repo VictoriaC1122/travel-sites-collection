@@ -2,73 +2,274 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <title>Victoria's Travel Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>旅行手冊收藏｜Victoria's Travel Library</title>
     <meta
       name="description"
-      content="Victoria 的旅行手冊收藏，收錄東京、首爾、澳洲、日本東北、美西、印尼與英國的旅程入口。"
+      content="Victoria 親手整理的旅行手冊收藏，收錄東京、首爾、澳洲、日本東北、美西、印尼與英國旅程，依出發日期翻閱每一段路。"
     />
-    <meta name="theme-color" content="#d8c7b5" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#f4eee5" />
+    <meta name="color-scheme" content="light" />
+    <link rel="canonical" href="https://victoriac1122.github.io/travel-sites-collection/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Victoria's Travel Library" />
+    <meta property="og:title" content="旅行手冊收藏｜Victoria's Travel Library" />
+    <meta
+      property="og:description"
+      content="Victoria 親手整理的旅行手冊收藏。循著日期，翻開城市、雪國、海岸與長路。"
+    />
+    <meta property="og:url" content="https://victoriac1122.github.io/travel-sites-collection/" />
+    <meta property="og:image" content="https://victoriac1122.github.io/travel-sites-collection/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Victoria's Travel Library 旅行手冊收藏" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="旅行手冊收藏｜Victoria's Travel Library" />
+    <meta
+      name="twitter:description"
+      content="Victoria 親手整理的旅行手冊收藏。循著日期，翻開城市、雪國、海岸與長路。"
+    />
+    <meta name="twitter:image" content="https://victoriac1122.github.io/travel-sites-collection/og-card.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Manrope:wght@500;600&amp;family=Noto+Serif+TC:wght@400;500&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Victoria's Travel Library",
+        "description": "Victoria 親手整理的旅行手冊收藏，循出發日期收錄八段旅程。",
+        "url": "https://victoriac1122.github.io/travel-sites-collection/",
+        "inLanguage": ["zh-Hant", "en"],
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 8,
+          "itemListOrder": "https://schema.org/ItemListOrderAscending",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "url": "https://victoriac1122.github.io/tokyohot/", "name": "東京之旅 12/3–12/8" },
+            { "@type": "ListItem", "position": 2, "url": "https://victoriac1122.github.io/USA/", "name": "Victoria 全美西行" },
+            { "@type": "ListItem", "position": 3, "url": "https://victoriac1122.github.io/sendai-aomori-travel/", "name": "Victoria 日本東北行" },
+            { "@type": "ListItem", "position": 4, "url": "https://victoriac1122.github.io/victoria-aiden-tokyo-trip/", "name": "Victoria & Aiden 東京爆買之旅" },
+            { "@type": "ListItem", "position": 5, "url": "https://victoriac1122.github.io/seoul-travel-2026/", "name": "Seoul Travel Handbook 2026" },
+            { "@type": "ListItem", "position": 6, "url": "https://victoriac1122.github.io/australia-travel-2026/", "name": "Australia Travel Handbook 2026" },
+            { "@type": "ListItem", "position": 7, "url": "https://victoriac1122.github.io/bali-java-travel-2026/", "name": "Bali × Java Travel Handbook 2026" },
+            { "@type": "ListItem", "position": 8, "url": "https://victoriac1122.github.io/uk-aib-2026-travel/", "name": "AIB 2026 Manchester UK Trip" }
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content" data-zh="跳至主要內容" data-en="Skip to content">跳至主要內容</a>
+
     <div class="page-shell">
       <header class="hero" id="top">
-        <nav class="topbar">
-          <div class="brand">
-            <span class="brand-mark">V</span>
-            <div>
-              <p class="eyebrow" data-i18n="brandEyebrow">Victoria Travel Archive</p>
-              <p class="brand-title" data-i18n="brandTitle">旅遊網站總整理</p>
-            </div>
-          </div>
-          <div class="lang-switcher" role="group" aria-label="Language switcher">
-            <button class="lang-btn active" type="button" data-lang="zh">中</button>
-            <button class="lang-btn" type="button" data-lang="en">EN</button>
+        <nav class="topbar" aria-label="主要導覽">
+          <a class="brand" href="#top" aria-label="Victoria's Travel Library 首頁">
+            <span class="brand-mark" aria-hidden="true">V</span>
+            <span class="brand-copy">
+              <span class="brand-kicker">Victoria's Travel Library</span>
+              <span class="brand-title" data-zh="旅行手冊收藏" data-en="Travel handbook shelf">旅行手冊收藏</span>
+            </span>
+          </a>
+
+          <div class="lang-switcher" role="group" aria-label="語言切換">
+            <button class="lang-btn active" type="button" data-language="zh" aria-pressed="true" aria-label="切換為繁體中文">中</button>
+            <button class="lang-btn" type="button" data-language="en" aria-pressed="false" aria-label="Switch to English">EN</button>
           </div>
         </nav>
 
-        <div class="hero-layout">
-          <section class="hero-copy">
-            <div class="hero-main">
-              <p class="eyebrow" data-i18n="heroEyebrow">Travel guide collection</p>
-              <h1 data-i18n="heroTitle">把走過的城市與風景，安放在同一頁裡。</h1>
-              <p class="hero-lead" data-i18n="heroLead">
-                這是 Victoria 將自己的旅遊手冊整理成網站之後，再進一步彙整而成的總覽網站，讓你可以從同一個入口走進不同地方的旅程。
-              </p>
-              <div class="hero-actions">
-                <a class="hero-cta" href="#collection" data-i18n="heroCta">瀏覽旅程</a>
-              </div>
-            </div>
-          </section>
+        <div class="hero-copy">
+          <p class="eyebrow">Travel Library · 2025–2026</p>
+          <h1
+            id="hero-title"
+            data-zh="把將要抵達的城市，安靜收進書頁。"
+            data-en="Cities yet to be reached, quietly gathered into pages."
+          >把將要抵達的城市，安靜收進書頁。</h1>
+          <p
+            class="hero-lead"
+            data-zh="這裡收錄 Victoria 親手整理的旅行手冊網站。城市、路線與日常細節，都在出發以前，先有了可以翻閱的模樣。"
+            data-en="Victoria's own travel handbooks, gathered in one place. Cities, routes, and everyday details take shape here before each departure."
+          >這裡收錄 Victoria 親手整理的旅行手冊網站。城市、路線與日常細節，都在出發以前，先有了可以翻閱的模樣。</p>
+          <a class="hero-cta" href="#collection">
+            <span data-zh="翻閱手冊" data-en="Browse the shelf">翻閱手冊</span>
+            <span class="link-arrow" aria-hidden="true">↓</span>
+          </a>
         </div>
       </header>
 
-      <main>
-        <section class="collection-section" id="collection">
+      <main id="main-content">
+        <section class="collection-section" id="collection" aria-labelledby="collection-title">
           <div class="section-heading">
-            <div class="section-heading-copy">
-              <p class="eyebrow" data-i18n="collectionEyebrow">Collection</p>
-              <h2 data-i18n="collectionTitle">Explore the journeys</h2>
+            <div>
+              <p class="eyebrow">Handbook Shelf</p>
+              <h2 id="collection-title" data-zh="旅行手冊目錄" data-en="Travel handbook index">旅行手冊目錄</h2>
             </div>
-            <p class="section-heading-note" data-i18n="collectionLead">依出發日期排序，從最近寫下的旅程，一路翻到更早的地方。</p>
+            <p
+              class="section-heading-note"
+              data-zh="循出發日期排列。每一冊，都是一段旅程的入口。"
+              data-en="Arranged by departure date. Each handbook opens onto a different journey."
+            >循出發日期排列。每一冊，都是一段旅程的入口。</p>
           </div>
-          <div class="collection-grid" id="cards"></div>
+
+          <ol class="collection-grid">
+            <li class="collection-item">
+              <article class="site-card" style="--card-surface:#e6e7e2; --card-accent:#7b8a87; --card-region:#61757b;" aria-labelledby="tokyo-winter-title">
+                <div class="site-body">
+                  <div class="site-topline"><span class="site-region">Tokyo Winter</span><span class="site-year">2025</span></div>
+                  <h3 id="tokyo-winter-title" data-zh="東京之旅 12/3–12/8" data-en="Tokyo Trip 12/3–12/8">東京之旅 12/3–12/8</h3>
+                  <p class="site-subtitle" data-zh="東京冬日旅程日誌" data-en="Tokyo winter trip journal">東京冬日旅程日誌</p>
+                  <div class="site-meta-line"><span data-zh="城市日誌" data-en="City Journal">城市日誌</span><span aria-hidden="true">·</span><span data-zh="冬日短旅" data-en="Winter short trip">冬日短旅</span></div>
+                  <p class="site-description" data-zh="冬天東京的短篇日誌，記下每日步伐、住處與花費，也把城市冷冷亮亮的光留在字裡。" data-en="A winter Tokyo journal of daily walks, stays, and spending, with the city's cold light kept close.">冬天東京的短篇日誌，記下每日步伐、住處與花費，也把城市冷冷亮亮的光留在字裡。</p>
+                  <div class="tag-row"><span class="tag" data-zh="東京" data-en="Tokyo">東京</span><span class="tag" data-zh="冬季" data-en="Winter">冬季</span><span class="tag" data-zh="花費分析" data-en="Spending">花費分析</span><span class="tag" data-zh="行程紀錄" data-en="Journal">行程紀錄</span></div>
+                </div>
+                <div class="site-footer-row">
+                  <p class="site-date"><time datetime="2025-12-03">2025.12.03</time><span aria-hidden="true">—</span><time datetime="2025-12-08">12.08</time></p>
+                  <a class="site-link" href="https://victoriac1122.github.io/tokyohot/" target="_blank" rel="noopener noreferrer"><span data-zh="打開手冊" data-en="Open handbook">打開手冊</span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only" data-zh="，另開分頁" data-en=", opens in a new tab">，另開分頁</span></a>
+                </div>
+              </article>
+            </li>
+
+            <li class="collection-item">
+              <article class="site-card" style="--card-surface:#e3e7e7; --card-accent:#768e98; --card-region:#627b88;" aria-labelledby="usa-title">
+                <div class="site-body">
+                  <div class="site-topline"><span class="site-region">USA West</span><span class="site-year">2025–2026</span></div>
+                  <h3 id="usa-title" data-zh="Victoria 全美西行" data-en="Victoria USA West Coast Trip">Victoria 全美西行</h3>
+                  <p class="site-subtitle" data-zh="美西公路旅行總整理" data-en="West Coast USA road trip archive">美西公路旅行總整理</p>
+                  <div class="site-meta-line"><span data-zh="公路旅行" data-en="Road Trip">公路旅行</span><span aria-hidden="true">·</span><span data-zh="長線旅程" data-en="Long-haul itinerary">長線旅程</span></div>
+                  <p class="site-description" data-zh="沿著美西公路向前，把城市之間的距離、花費與停留仔細記下，讀起來像一段拉得很長的路。" data-en="A long-form West Coast road trip archive that keeps distance, budget, and daily stops in clear view.">沿著美西公路向前，把城市之間的距離、花費與停留仔細記下，讀起來像一段拉得很長的路。</p>
+                  <div class="tag-row"><span class="tag" data-zh="美西" data-en="USA West">美西</span><span class="tag" data-zh="公路旅行" data-en="Road Trip">公路旅行</span><span class="tag" data-zh="費用整理" data-en="Budget">費用整理</span><span class="tag" data-zh="長天數" data-en="Long Stay">長天數</span></div>
+                </div>
+                <div class="site-footer-row">
+                  <p class="site-date"><time datetime="2025-12-20">2025.12.20</time><span aria-hidden="true">—</span><time datetime="2026-01-07">2026.01.07</time></p>
+                  <a class="site-link" href="https://victoriac1122.github.io/USA/" target="_blank" rel="noopener noreferrer"><span data-zh="打開手冊" data-en="Open handbook">打開手冊</span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only" data-zh="，另開分頁" data-en=", opens in a new tab">，另開分頁</span></a>
+                </div>
+              </article>
+            </li>
+
+            <li class="collection-item">
+              <article class="site-card" style="--card-surface:#e4ebf0; --card-accent:#6c7a89; --card-region:#5e7182;" aria-labelledby="tohoku-title">
+                <div class="site-body">
+                  <div class="site-topline"><span class="site-region">Tohoku</span><span class="site-year">2026</span></div>
+                  <h3 id="tohoku-title" data-zh="Victoria 日本東北行" data-en="Victoria Tohoku Winter Trip">Victoria 日本東北行</h3>
+                  <p class="site-subtitle" data-zh="仙台與青森雪國旅程" data-en="Sendai and Aomori travel story">仙台與青森雪國旅程</p>
+                  <div class="site-meta-line"><span data-zh="雪國路線" data-en="Snow Country">雪國路線</span><span aria-hidden="true">·</span><span data-zh="冬季自駕" data-en="Winter drive">冬季自駕</span></div>
+                  <p class="site-description" data-zh="雪落在仙台、青森與藏王之間，溫泉、纜車與自駕的路線也跟著安靜下來，留著白色的冬日餘韻。" data-en="A winter route through Sendai, Aomori, and Zao, where snow, onsen stays, cable cars, and driving settle into a quieter rhythm.">雪落在仙台、青森與藏王之間，溫泉、纜車與自駕的路線也跟著安靜下來，留著白色的冬日餘韻。</p>
+                  <div class="tag-row"><span class="tag" data-zh="日本東北" data-en="Tohoku">日本東北</span><span class="tag" data-zh="雪景" data-en="Snow">雪景</span><span class="tag" data-zh="溫泉" data-en="Onsen">溫泉</span><span class="tag" data-zh="自駕" data-en="Drive">自駕</span></div>
+                </div>
+                <div class="site-footer-row">
+                  <p class="site-date"><time datetime="2026-01-21">2026.01.21</time><span aria-hidden="true">—</span><time datetime="2026-01-28">01.28</time></p>
+                  <a class="site-link" href="https://victoriac1122.github.io/sendai-aomori-travel/" target="_blank" rel="noopener noreferrer"><span data-zh="打開手冊" data-en="Open handbook">打開手冊</span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only" data-zh="，另開分頁" data-en=", opens in a new tab">，另開分頁</span></a>
+                </div>
+              </article>
+            </li>
+
+            <li class="collection-item">
+              <article class="site-card" style="--card-surface:#efe4d5; --card-accent:#8c6b47; --card-region:#6f593a;" aria-labelledby="tokyo-edit-title">
+                <div class="site-body">
+                  <div class="site-topline"><span class="site-region">Tokyo Edit</span><span class="site-year">2026</span></div>
+                  <h3 id="tokyo-edit-title" data-zh="Victoria &amp; Aiden 東京爆買之旅" data-en="Victoria &amp; Aiden Tokyo Shopping Trip">Victoria &amp; Aiden 東京爆買之旅</h3>
+                  <p class="site-subtitle" data-zh="東京購物旅遊手冊" data-en="Tokyo shopping travel book">東京購物旅遊手冊</p>
+                  <div class="site-meta-line"><span data-zh="購物旅冊" data-en="Shopping Guide">購物旅冊</span><span aria-hidden="true">·</span><span data-zh="東京城市停留" data-en="Tokyo city stay">東京城市停留</span></div>
+                  <p class="site-description" data-zh="把東京的百貨、街區與購物節奏細細收攏，從每日安排到預算分配，都寫成一冊俐落的城市旅程。" data-en="A Tokyo handbook shaped around shopping streets, daily rhythm, and budget notes, crisp and city-bright.">把東京的百貨、街區與購物節奏細細收攏，從每日安排到預算分配，都寫成一冊俐落的城市旅程。</p>
+                  <div class="tag-row"><span class="tag" data-zh="東京" data-en="Tokyo">東京</span><span class="tag" data-zh="購物" data-en="Shopping">購物</span><span class="tag" data-zh="多語系" data-en="Multilingual">多語系</span><span class="tag" data-zh="預算規劃" data-en="Budget">預算規劃</span></div>
+                </div>
+                <div class="site-footer-row">
+                  <p class="site-date"><time datetime="2026-02-21">2026.02.21</time><span aria-hidden="true">—</span><time datetime="2026-02-27">02.27</time></p>
+                  <a class="site-link" href="https://victoriac1122.github.io/victoria-aiden-tokyo-trip/" target="_blank" rel="noopener noreferrer"><span data-zh="打開手冊" data-en="Open handbook">打開手冊</span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only" data-zh="，另開分頁" data-en=", opens in a new tab">，另開分頁</span></a>
+                </div>
+              </article>
+            </li>
+
+            <li class="collection-item">
+              <article class="site-card" style="--card-surface:#e5e0db; --card-accent:#8c7a72; --card-region:#74655e;" aria-labelledby="seoul-title">
+                <div class="site-body">
+                  <div class="site-topline"><span class="site-region">Seoul</span><span class="site-year">2026</span></div>
+                  <h3 class="title-latin" id="seoul-title" data-zh="Seoul Travel Handbook 2026" data-en="Seoul Travel Handbook 2026">Seoul Travel Handbook 2026</h3>
+                  <p class="site-subtitle" data-zh="首爾城市旅行手冊" data-en="Seoul city travel handbook">首爾城市旅行手冊</p>
+                  <div class="site-meta-line"><span data-zh="城市旅冊" data-en="City Guide">城市旅冊</span><span aria-hidden="true">·</span><span data-zh="首爾短旅" data-en="Seoul short stay">首爾短旅</span></div>
+                  <p class="site-description" data-zh="把首爾的地鐵線、旅館、韓服拍攝與街區步調寫成一冊輕輕展開的城市手冊。" data-en="A Seoul handbook of subway lines, stays, hanbok moments, and neighborhood rhythm, unfolding like a brief city escape.">把首爾的地鐵線、旅館、韓服拍攝與街區步調寫成一冊輕輕展開的城市手冊。</p>
+                  <div class="tag-row"><span class="tag" data-zh="首爾" data-en="Seoul">首爾</span><span class="tag" data-zh="韓服" data-en="Hanbok">韓服</span><span class="tag" data-zh="多語系" data-en="Multilingual">多語系</span><span class="tag" data-zh="城市散步" data-en="City Walks">城市散步</span></div>
+                </div>
+                <div class="site-footer-row">
+                  <p class="site-date"><time datetime="2026-05-15">2026.05.15</time><span aria-hidden="true">—</span><time datetime="2026-05-20">05.20</time></p>
+                  <a class="site-link" href="https://victoriac1122.github.io/seoul-travel-2026/" target="_blank" rel="noopener noreferrer"><span data-zh="打開手冊" data-en="Open handbook">打開手冊</span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only" data-zh="，另開分頁" data-en=", opens in a new tab">，另開分頁</span></a>
+                </div>
+              </article>
+            </li>
+
+            <li class="collection-item">
+              <article class="site-card" style="--card-surface:#ead9cb; --card-accent:#a26c45; --card-region:#87583b;" aria-labelledby="australia-title">
+                <div class="site-body">
+                  <div class="site-topline"><span class="site-region">Australia</span><span class="site-year">2026</span></div>
+                  <h3 class="title-latin" id="australia-title" data-zh="Australia Travel Handbook 2026" data-en="Australia Travel Handbook 2026">Australia Travel Handbook 2026</h3>
+                  <p class="site-subtitle" data-zh="澳洲雙城旅行手冊" data-en="Australia two-city travel handbook">澳洲雙城旅行手冊</p>
+                  <div class="site-meta-line"><span data-zh="城市路線" data-en="City Route">城市路線</span><span aria-hidden="true">·</span><span data-zh="墨爾本到雪梨" data-en="Melbourne to Sydney">墨爾本到雪梨</span></div>
+                  <p class="site-description" data-zh="從墨爾本的巷弄與咖啡開始，轉進大洋路與雪梨港灣，收成一段溫暖明亮的南半球旅程。" data-en="Beginning with Melbourne laneways and coffee, then turning toward the Great Ocean Road and Sydney Harbour, this is a warm two-city journey.">從墨爾本的巷弄與咖啡開始，轉進大洋路與雪梨港灣，收成一段溫暖明亮的南半球旅程。</p>
+                  <div class="tag-row"><span class="tag" data-zh="澳洲" data-en="Australia">澳洲</span><span class="tag" data-zh="墨爾本" data-en="Melbourne">墨爾本</span><span class="tag" data-zh="雪梨" data-en="Sydney">雪梨</span><span class="tag" data-zh="大洋路" data-en="Great Ocean Road">大洋路</span></div>
+                </div>
+                <div class="site-footer-row">
+                  <p class="site-date"><time datetime="2026-05-23">2026.05.23</time><span aria-hidden="true">—</span><time datetime="2026-05-30">05.30</time></p>
+                  <a class="site-link" href="https://victoriac1122.github.io/australia-travel-2026/" target="_blank" rel="noopener noreferrer"><span data-zh="打開手冊" data-en="Open handbook">打開手冊</span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only" data-zh="，另開分頁" data-en=", opens in a new tab">，另開分頁</span></a>
+                </div>
+              </article>
+            </li>
+
+            <li class="collection-item">
+              <article class="site-card" style="--card-surface:#ead8c7; --card-accent:#9a6a48; --card-region:#8d5837;" aria-labelledby="bali-java-title">
+                <div class="site-body">
+                  <div class="site-topline"><span class="site-region">Bali × Java</span><span class="site-year">2026</span></div>
+                  <h3 class="title-latin" id="bali-java-title" data-zh="Bali × Java Travel Handbook 2026" data-en="Bali × Java Travel Handbook 2026">Bali × Java Travel Handbook 2026</h3>
+                  <p class="site-subtitle" data-zh="印尼海島與火山旅程" data-en="Indonesia island-to-volcano route">印尼海島與火山旅程</p>
+                  <div class="site-meta-line"><span data-zh="自然路線" data-en="Nature Route">自然路線</span><span aria-hidden="true">·</span><span data-zh="海島到火山" data-en="Island to volcano">海島到火山</span></div>
+                  <p class="site-description" data-zh="從海風與稻田走到火山、瀑布與古城，把印尼一路南洋而熱烈的景色串成完整路線。" data-en="From sea air and rice fields to volcanoes, waterfalls, and old cities, this route gathers Indonesia into one vivid journey.">從海風與稻田走到火山、瀑布與古城，把印尼一路南洋而熱烈的景色串成完整路線。</p>
+                  <div class="tag-row"><span class="tag" data-zh="印尼" data-en="Indonesia">印尼</span><span class="tag" data-zh="峇里島" data-en="Bali">峇里島</span><span class="tag" data-zh="火山" data-en="Volcano">火山</span><span class="tag" data-zh="旅遊手冊" data-en="Handbook">旅遊手冊</span></div>
+                </div>
+                <div class="site-footer-row">
+                  <p class="site-date"><time datetime="2026-06-13">2026.06.13</time><span aria-hidden="true">—</span><time datetime="2026-06-21">06.21</time></p>
+                  <a class="site-link" href="https://victoriac1122.github.io/bali-java-travel-2026/" target="_blank" rel="noopener noreferrer"><span data-zh="打開手冊" data-en="Open handbook">打開手冊</span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only" data-zh="，另開分頁" data-en=", opens in a new tab">，另開分頁</span></a>
+                </div>
+              </article>
+            </li>
+
+            <li class="collection-item">
+              <article class="site-card" style="--card-surface:#e5dee6; --card-accent:#76647d; --card-region:#66566f;" aria-labelledby="uk-title">
+                <div class="site-body">
+                  <div class="site-topline"><span class="site-region">UK · AIB</span><span class="site-year">2026</span></div>
+                  <h3 id="uk-title" data-zh="AIB 2026 曼徹斯特英國行" data-en="AIB 2026 Manchester UK Trip">AIB 2026 曼徹斯特英國行</h3>
+                  <p class="site-subtitle" data-zh="英國研討會與城市旅程手冊" data-en="UK conference and city travel handbook">英國研討會與城市旅程手冊</p>
+                  <div class="site-meta-line"><span data-zh="研討會旅程" data-en="Conference Journey">研討會旅程</span><span aria-hidden="true">·</span><span data-zh="曼城到倫敦" data-en="Manchester to London">曼城到倫敦</span></div>
+                  <p class="site-description" data-zh="從曼徹斯特的會議日程出發，沿著車站、住宿與倫敦街景展開，把學術行程與旅途片段編在一起。" data-en="Beginning in Manchester for AIB 2026, this handbook threads conference days, stations, stays, and the London leg into one quiet route.">從曼徹斯特的會議日程出發，沿著車站、住宿與倫敦街景展開，把學術行程與旅途片段編在一起。</p>
+                  <div class="tag-row"><span class="tag" data-zh="英國" data-en="UK">英國</span><span class="tag" data-zh="曼徹斯特" data-en="Manchester">曼徹斯特</span><span class="tag" data-zh="倫敦" data-en="London">倫敦</span><span class="tag" data-zh="研討會" data-en="Conference">研討會</span></div>
+                </div>
+                <div class="site-footer-row">
+                  <p class="site-date"><time datetime="2026-06-29">2026.06.29</time><span aria-hidden="true">—</span><time datetime="2026-07-12">07.12</time></p>
+                  <a class="site-link" href="https://victoriac1122.github.io/uk-aib-2026-travel/" target="_blank" rel="noopener noreferrer"><span data-zh="打開手冊" data-en="Open handbook">打開手冊</span><span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only" data-zh="，另開分頁" data-en=", opens in a new tab">，另開分頁</span></a>
+                </div>
+              </article>
+            </li>
+          </ol>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p class="site-footer-copy" data-i18n="footerCopy">Victoria Travel Archive</p>
-        <a class="site-footer-link" href="#top" data-i18n="footerBackToTop">回到上方</a>
+        <p>© 2026 Victoria's Travel Library</p>
+        <a href="#top"><span data-zh="回到上方" data-en="Back to top">回到上方</span><span class="link-arrow" aria-hidden="true">↑</span></a>
       </footer>
     </div>
 
-    <script src="./script.js"></script>
+    <p class="sr-only" id="language-status" role="status" aria-live="polite"></p>
+    <script src="./script.js" defer></script>
   </body>
 </html>
