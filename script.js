@@ -13,28 +13,26 @@
 
   const pageMetadata = {
     zh: {
-      title: "旅行手冊收藏｜Victoria's Travel Library",
-      description: "Victoria 親手整理的旅行手冊收藏，收錄東京、首爾、澳洲、日本東北、美西、印尼與英國旅程，依出發日期翻閱每一段路。",
-      socialDescription: "Victoria 親手整理的旅行手冊收藏。循著日期，翻開城市、雪國、海岸與長路。",
+      title: "Victoria 的旅行手冊｜Victoria's Travel Library",
+      description: "Victoria 替每趟旅行做的手冊網站，目前九本：東京、美國西南、日本東北、首爾、澳洲、峇里島與爪哇、AIB 2026 歐洲行、葡萄牙與西班牙。照出發日期排。",
+      socialDescription: "Victoria 替每趟旅行做的手冊網站，目前九本，照出發日期排。",
       locale: "zh_TW",
       status: "已切換為繁體中文",
       navLabel: "主要導覽",
       switcherLabel: "語言切換",
       homeLabel: "Victoria's Travel Library 首頁",
-      openLabel: "打開手冊",
-      newTabLabel: "另開分頁"
+      linkLabel: (title) => `打開手冊：${title}（另開分頁）`
     },
     en: {
-      title: "Victoria's Travel Library | Travel Handbook Shelf",
-      description: "Victoria's travel handbook collection, with journeys through Tokyo, Seoul, Australia, Tohoku, the American West, Indonesia, and the UK.",
-      socialDescription: "Victoria's own travel handbooks, arranged by departure date and gathered on one quiet shelf.",
+      title: "Victoria's Travel Handbooks",
+      description: "The handbook sites Victoria makes for each trip. Nine so far: Tokyo, the US Southwest, Tohoku, Seoul, Australia, Bali and Java, Europe for AIB 2026, and Portugal and Spain.",
+      socialDescription: "The handbook sites Victoria makes for each trip. Nine so far, listed by departure date.",
       locale: "en_US",
       status: "Language changed to English",
       navLabel: "Primary navigation",
       switcherLabel: "Language switcher",
       homeLabel: "Victoria's Travel Library home",
-      openLabel: "Open handbook",
-      newTabLabel: "opens in a new tab"
+      linkLabel: (title) => `Open handbook: ${title} (opens in a new tab)`
     }
   };
 
@@ -81,7 +79,7 @@
       const title = card.querySelector("h3")?.textContent.trim();
       const link = card.querySelector(".site-link");
       if (title && link) {
-        link.setAttribute("aria-label", `${metadata.openLabel}: ${title}, ${metadata.newTabLabel}`);
+        link.setAttribute("aria-label", metadata.linkLabel(title));
       }
     });
 

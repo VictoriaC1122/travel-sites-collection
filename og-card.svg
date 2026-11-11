@@ -9,9 +9,9 @@
   <path d="M92 74v482" stroke="#836b55" stroke-width="5"/>
   <circle cx="1004" cy="315" r="128" fill="none" stroke="#8c745d" stroke-opacity=".15" stroke-width="2"/>
   <circle cx="1004" cy="315" r="178" fill="none" stroke="#8c745d" stroke-opacity=".08" stroke-width="2"/>
-  <text x="144" y="150" fill="#7a6d63" font-family="Avenir Next, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="6">VICTORIA'S TRAVEL LIBRARY</text>
-  <text x="140" y="287" fill="#302a26" font-family="Songti TC, Noto Serif TC, serif" font-size="72" font-weight="500" letter-spacing="4">旅行手冊收藏</text>
-  <text x="143" y="376" fill="#625950" font-family="Songti TC, Noto Serif TC, serif" font-size="30" font-weight="400" letter-spacing="2">把將要抵達的城市，安靜收進書頁。</text>
-  <text x="144" y="504" fill="#826d5b" font-family="Avenir Next, Arial, sans-serif" font-size="20" font-weight="500" letter-spacing="4">TOKYO · SEOUL · AUSTRALIA · TOHOKU · USA · UK</text>
+  <text x="144" y="150" fill="#7a6d63" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="6">VICTORIA'S TRAVEL LIBRARY</text>
+  <text x="140" y="287" fill="#302a26" font-family="Songti TC, Noto Serif TC, Noto Serif CJK TC, serif" font-size="66" font-weight="500" letter-spacing="4">Victoria 的旅行手冊</text>
+  <text x="143" y="376" fill="#625950" font-family="Songti TC, Noto Serif TC, Noto Serif CJK TC, serif" font-size="30" font-weight="400" letter-spacing="2">每趟旅行一本，照出發日期排。</text>
+  <text x="144" y="504" fill="#826d5b" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="500" letter-spacing="3">TOKYO · USA · TOHOKU · SEOUL · AUSTRALIA · BALI · EUROPE</text>
   <text x="968" y="335" fill="#725d49" font-family="Georgia, serif" font-size="76">V</text>
 </svg>

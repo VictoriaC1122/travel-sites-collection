@@ -244,7 +244,7 @@ a {
 }
 
 .hero h1 {
-  max-width: 13ch;
+  max-width: 16ch;
   margin: 18px 0 0;
   font-family: var(--font-body);
   font-size: clamp(2.75rem, 5.5vw, 4.85rem);
@@ -255,7 +255,7 @@ a {
 }
 
 html[lang="en"] .hero h1 {
-  max-width: 12.5ch;
+  max-width: 14ch;
   font-family: var(--font-display);
   font-size: clamp(3rem, 5vw, 4.65rem);
   letter-spacing: 0.005em;
@@ -332,7 +332,7 @@ main {
 }
 
 .section-heading h2 {
-  margin: 10px 0 0;
+  margin: 0;
   font-size: clamp(1.75rem, 2.5vw, 2.35rem);
   font-weight: 500;
   letter-spacing: 0.015em;
@@ -445,25 +445,8 @@ html[lang="en"] .site-card h3 {
   line-height: 1.15;
 }
 
-.site-subtitle {
-  margin: 8px 0 0;
-  color: var(--ink-soft);
-  font-size: 0.86rem;
-  letter-spacing: 0.01em;
-  line-height: 1.7;
-}
-
-html[lang="en"] .site-subtitle {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  line-height: 1.45;
-}
-
 .site-meta-line {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 16px;
+  margin: 14px 0 0;
   color: var(--card-region, var(--ink-muted));
   font-family: var(--font-ui);
   font-size: 0.71rem;
