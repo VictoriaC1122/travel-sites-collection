@@ -16,12 +16,13 @@ https://victoriac1122.github.io/travel-sites-collection/
 | 2026.06.13–06.21 | 峇里島 × 爪哇 | https://victoriac1122.github.io/bali-java-travel-2026/ |
 | 2026.06.29–07.12 | AIB 2026 曼徹斯特｜德英法之旅 | https://victoriac1122.github.io/uk-aib-2026-travel/ |
 | 2026.11.02–11.09、11.24–12.02 | 葡萄牙・西班牙 2026 | https://victoriac1122.github.io/iberia-travel-2026/victoria.html?lang=zh-TW |
+| 2027.04.08–04.25 | Sonic 美東行 2027 | https://victoriac1122.github.io/us-east-coast-2027/ |
 
 ## 新增一本手冊
 
 1. 在 `index.html` 的 `<ol class="collection-grid">` 裡複製一個 `<li class="collection-item">`，改掉標題、說明、標籤、日期和連結。中文寫在 `data-zh` 和標籤內文，英文寫在 `data-en`。
 2. 同一個檔案上方的 JSON-LD 清單補一筆，`numberOfItems` 加一。
-3. 首頁文案和 `script.js` 的 `pageMetadata` 裡寫了「九本」，數量變了要一起改。
+3. 首頁文案和 `script.js` 的 `pageMetadata` 裡寫了「十本」，數量變了要一起改。
 4. `sitemap.xml` 的 `lastmod` 改成當天日期。
 
 ## 檔案

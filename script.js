@@ -14,8 +14,8 @@
   const pageMetadata = {
     zh: {
       title: "Victoria 的旅行手冊｜Victoria's Travel Library",
-      description: "Victoria 替每趟旅行做的手冊網站，目前九本：東京、美國西南、日本東北、首爾、澳洲、峇里島與爪哇、AIB 2026 歐洲行、葡萄牙與西班牙。照出發日期排。",
-      socialDescription: "Victoria 替每趟旅行做的手冊網站，目前九本，照出發日期排。",
+      description: "Victoria 替每趟旅行做的手冊網站，目前十本：東京、美國西南、日本東北、首爾、澳洲、峇里島與爪哇、AIB 2026 歐洲行、葡萄牙與西班牙、美東。照出發日期排。",
+      socialDescription: "Victoria 替每趟旅行做的手冊網站，目前十本，照出發日期排。",
       locale: "zh_TW",
       status: "已切換為繁體中文",
       navLabel: "主要導覽",
@@ -25,8 +25,8 @@
     },
     en: {
       title: "Victoria's Travel Handbooks",
-      description: "The handbook sites Victoria makes for each trip. Nine so far: Tokyo, the US Southwest, Tohoku, Seoul, Australia, Bali and Java, Europe for AIB 2026, and Portugal and Spain.",
-      socialDescription: "The handbook sites Victoria makes for each trip. Nine so far, listed by departure date.",
+      description: "The handbook sites Victoria makes for each trip. Ten so far: Tokyo, the US Southwest, Tohoku, Seoul, Australia, Bali and Java, Europe for AIB 2026, Portugal and Spain, and the US East Coast.",
+      socialDescription: "The handbook sites Victoria makes for each trip. Ten so far, listed by departure date.",
       locale: "en_US",
       status: "Language changed to English",
       navLabel: "Primary navigation",
